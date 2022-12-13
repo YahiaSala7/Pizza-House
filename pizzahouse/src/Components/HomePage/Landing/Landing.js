@@ -1,7 +1,7 @@
 import React from 'react'
 import '../../general.css'
 import './css/landing.css'
-import pizaa15 from'../../imgs/Landing/pizza21.jpg'
+import pizaa15 from'../../imgs/Landing/pizza.jpg'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { solid, regular, brands, icon } from '@fortawesome/fontawesome-svg-core/import.macro' 
 
