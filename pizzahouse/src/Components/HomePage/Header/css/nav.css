@@ -39,3 +39,8 @@ left: 50%;
 transform: translateX(-50%);
 
 }
+@media (max-width:991px) {
+    .nav ul{
+        display: none;
+    } 
+}

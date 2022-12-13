@@ -3,33 +3,27 @@ background-size: cover;
 position: relative;
 }
 .landing img {
-    width: 100%;
-    height: 100%;
-    /* position: absolute; */
+width: 100%;
 }
-.landing h1,
-.landing p,
-.landing .view
+
+.landing .info
 {
 position: absolute;
 left: 20%;
-
+top: 25%;
+transform:  -50%;
 }
 .landing h1{
-    top: 20%;
-    transform: translateY(-20%);
     text-transform: uppercase;
     color: white;
-    font-size: 80px ;
+    font-size: 70px ;
     max-width:500px ;
     letter-spacing: 2px;
     font-family: "Asfalto";
 
 }
 .landing .view{
-top: 90%;
-transform: translateY(-90%);
-padding: 20px 70px ;
+padding: 15px 70px ;
 cursor: pointer;
 background-color: var(--second-color);
 color: black;
@@ -44,41 +38,37 @@ color: white;
 background-color:var(--third-color);
 }
 .landing p{
-    top: 67%;
-    transform: translateY(-67%);   
+    margin:20px 0 20px 0;
     color: white;
     max-width:300px ;
     letter-spacing: 1px;
 
 }
-@media (min-width:1200px) {
-    .landing p{
-        top: 55%;
-        transform: translateY(-55%);   
-    }  
-    .landing h1{
-        top: 20%;
-        transform: translateY(-20%);        
+@media (max-width:1200px) {
+    .landing .info h1{
+    font-size: 50px;    
     }
-    .landing .view{
-        top: 75%;
-        transform: translateY(-75%);         
+    .landing  .info .view{
+        padding: 15px 40px;
     }
 }
-@media (max-width:991px) {
-    .landing p{
-        top: 55%;
-        transform: translateY(-55%);   
+@media (max-width:767px) {
+    .landing .info {
+display: flex;
+flex-direction: column;
+left: 50%;
+transform: translateX(-50%);
+align-items: center;
     }  
-    .landing h1{
-        top: 20%;
-        transform: translateY(-20%); 
-        font-size: 50px;       
+    .landing .info h1{
+        font-size: 25px;
     }
-    .landing .view{
-        top: 85%;
-        transform: translateY(-85%);         
-        font: 16px;
-
+    .landing .info p{
+        font-size: 14px;
+        margin: 10px 0 10px 0;
+    }
+    .landing .info .view{
+        width: fit-content;
+        padding: 10px 20px;
     }
 }

@@ -1,27 +1,36 @@
 .menu{
-
+  background-color:   #f5f5f5;
 }
 .menu .container{
     display: grid;
-    grid-template-columns: repeat(auto-fill , minmax(350px,1fr));
-    gap: 40px;
+    grid-template-columns: repeat(auto-fill , minmax(360px,1fr));
+    gap: 25px;
 }
 .menu .container .card{
 position: relative;
+width: 370px;
+height: 278px;
+background-color: white;
+overflow: hidden;
+transition: var(--main-transition);
+margin: auto;
 }
-/* .menu .container .card .img{
-    position: relative;
+.menu .container .card img{
+transition: .3s;
 
 }
-.menu .container .card .img::after{
+.menu .container .card:hover img{
+ transform: scale(1.1);
+}
+.menu .container .card::after{
 content: "";
 position: absolute;
 top: 0;
 left: 0;
 width: 100%;
 height: 100%;
-background-color: rgb(0, 0, 0 ,50%);
-} */
+background-color: rgb(0, 0, 0 ,30%);
+} 
 .menu .container .card .circle-icon .icon{
 font-size: 30px;
 position: absolute;
@@ -41,8 +50,10 @@ top: 30%;
 transform: translateY(-50%);
 left: 50%;
 transform: translateX(-50%);
-border: 5px solid rgba(255, 255, 255, 0.15);
+border: 5px solid rgba(19, 15, 15, 0.548);
 transition: var(--main-transition);
+z-index: 1000;
+
 }
 .menu .container .card:hover .circle-icon{
     background-color: var(--second-color);
@@ -50,4 +61,34 @@ transition: var(--main-transition);
 .menu .container .card:hover .circle-icon .icon{
 color: black;
 }
-/* .menu .container .card .circle-icon */
+
+
+.menu .container .card h3{
+position: absolute;
+top: 65%;
+transform: translateY(-50%);
+color: white;
+left: 50%;
+transform: translateX(-50%);
+transition: var(--main-transition);
+z-index: 1000;
+}
+
+.menu .container .card h3:hover{
+color: var(--second-color);
+cursor: pointer;
+}
+
+@media(max-width:991px){
+    .menu .container{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+.menu .container .card{
+flex-basis: 100%;
+}
+.menu .container .card img{
+text-align: center;
+}
+}

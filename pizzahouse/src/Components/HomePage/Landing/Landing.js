@@ -9,13 +9,15 @@ function Landing() {
   return (
     <div className='landing' id='landingid'>
       <img src={pizaa15} alt="" />
+      <div className="info">
       <h1 className='head1'>Perfect pizza </h1>
       <p className='parg1'>Experience the taste of a perfect pizza at PizzaHouse, one of the best restaurants</p>
       <button className='view'>View Our Menu</button>
+      </div>
     </div>
   )
 }
-const LandSection = document.getElementById("landing-section")
+const LandSection = document.getElementById("landingid")
 window.onresize = dHeight ;
 window.onload= dHeight;
 function dHeight(){

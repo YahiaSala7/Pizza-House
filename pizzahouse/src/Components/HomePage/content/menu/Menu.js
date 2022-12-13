@@ -23,15 +23,16 @@ function Menu() {
  <div className='circle-icon'>
  <FontAwesomeIcon icon={faBowlFood} className="icon"></FontAwesomeIcon>
  </div>
-
+ <a href="#"><h3>Salads</h3></a>
     </div>
     <div className="card">
     <img src={m2} alt="" />
+ 
 
     <div className='circle-icon'>
     <FontAwesomeIcon icon={faPizzaSlice} className="icon"></FontAwesomeIcon>
     </div>
-
+<a href="#"><h3>Pizzas</h3></a>
     </div>
     <div className="card">
     <img src={m3} alt="" />
@@ -39,7 +40,7 @@ function Menu() {
     <div className='circle-icon'>
     <FontAwesomeIcon icon={faBurger} className="icon"></FontAwesomeIcon>
     </div>
-
+<a href="#"><h3>Burgers</h3></a>
     </div>
     <div className="card">
     <img src={m4} alt="" />
@@ -47,16 +48,16 @@ function Menu() {
     <div className='circle-icon'>
     <FontAwesomeIcon icon={faIceCream} className="icon"></FontAwesomeIcon>
     </div>
-
-    </div>
+<a href="">
+<h3>Desserst</h3></a></div>
     <div className="card">
     <img src={m5} alt="" />
 
     <div className='circle-icon'>
     <FontAwesomeIcon icon={faGlassCheers} className="icon"></FontAwesomeIcon>
     </div>
-
-    </div>
+<a href="#">
+<h3>Drinks</h3></a></div>
     <div className="card">
     <img src={m6} alt="" />
 
@@ -64,7 +65,7 @@ function Menu() {
     <FontAwesomeIcon icon={faFish} className="icon"></FontAwesomeIcon>
 
     </div>
-
+<a href="#"><h3>Seafood</h3></a>
     </div>
     </div>
     </div>

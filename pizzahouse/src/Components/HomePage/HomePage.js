@@ -4,6 +4,7 @@ import Landing from './Landing/Landing'
 import Footer from './Footer/Footer'
 import MainTitle from '../MainTitle'
 import Menu from './content/menu/Menu'
+// import Services from './services/Services'
 function homePage() {
   return (
     <div>
@@ -11,6 +12,9 @@ function homePage() {
         <Landing/>  
         <MainTitle main="Our Best Menu "/>  
         <Menu/>
+        {/* <Services/> */}
+
+        {/* <MainTitle main="SELECTED PIZZAS "/>   */}
         {/* <Footer/> */}
     </div>
   )
