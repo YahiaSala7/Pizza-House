@@ -1,0 +1,41 @@
+
+.nav{
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.nav ul{
+/* flex-basis: 100%; */
+display: flex;
+justify-content: space-around;
+}
+.nav ul li a{
+color: black;
+display: flex;
+align-items: center;
+overflow: hidden;
+padding: 0 30px;
+height: 65px;
+font-size: 16px;
+transition: var(--main-transition);
+position: relative;
+font-weight: 600;
+
+}
+.nav ul li a::after{
+content: "";
+position: absolute;
+width: 100%;
+height: 4px;
+background-color: #6046b6;
+bottom: 0;
+left: -100%;
+transition: var(--main-transition);
+
+}
+.nav ul li a:hover::after{
+left: 50%;
+transform: translateX(-50%);
+
+}

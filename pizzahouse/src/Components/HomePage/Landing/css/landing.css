@@ -1,0 +1,84 @@
+.landing{
+background-size: cover;
+position: relative;
+}
+.landing img {
+    width: 100%;
+    height: 100%;
+    /* position: absolute; */
+}
+.landing h1,
+.landing p,
+.landing .view
+{
+position: absolute;
+left: 20%;
+
+}
+.landing h1{
+    top: 20%;
+    transform: translateY(-20%);
+    text-transform: uppercase;
+    color: white;
+    font-size: 80px ;
+    max-width:500px ;
+    letter-spacing: 2px;
+    font-family: "Asfalto";
+
+}
+.landing .view{
+top: 90%;
+transform: translateY(-90%);
+padding: 20px 70px ;
+cursor: pointer;
+background-color: var(--second-color);
+color: black;
+font-size: 18px;
+border: none;
+transition: var(--main-transition);
+font-family: "Asfalto";
+
+}
+.landing .view:hover{
+color: white;
+background-color:var(--third-color);
+}
+.landing p{
+    top: 67%;
+    transform: translateY(-67%);   
+    color: white;
+    max-width:300px ;
+    letter-spacing: 1px;
+
+}
+@media (min-width:1200px) {
+    .landing p{
+        top: 55%;
+        transform: translateY(-55%);   
+    }  
+    .landing h1{
+        top: 20%;
+        transform: translateY(-20%);        
+    }
+    .landing .view{
+        top: 75%;
+        transform: translateY(-75%);         
+    }
+}
+@media (max-width:991px) {
+    .landing p{
+        top: 55%;
+        transform: translateY(-55%);   
+    }  
+    .landing h1{
+        top: 20%;
+        transform: translateY(-20%); 
+        font-size: 50px;       
+    }
+    .landing .view{
+        top: 85%;
+        transform: translateY(-85%);         
+        font: 16px;
+
+    }
+}
