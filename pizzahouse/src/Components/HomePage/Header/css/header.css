@@ -8,11 +8,11 @@ z-index: 10000;
 content: "";
 position: absolute;
 background-color: white;
-width: 35%;
+width: 60%;
 height: 100%;
 top: 0;
-left: -15px;
-transform: skew(25deg);
+left: -35%;
+transform: skew(25deg)
 }
 .header .container{
 display: flex;

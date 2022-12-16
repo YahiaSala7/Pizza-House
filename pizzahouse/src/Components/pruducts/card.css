@@ -1,0 +1,80 @@
+.cardpage .container{
+max-width: 100%;
+display: grid;
+grid-template-columns: repeat(auto-fill , minmax(250px,1fr));
+gap: 5px;
+}
+
+.card-product{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
+    padding: 60px 20px 30px;
+    background-color: #fff;
+    width: 240px;
+}
+@media (max-width:991px) {
+    .card-product{
+    width: 100%;
+    }  
+.cardpage .container{
+    gap: 20px;
+    }
+}
+
+
+.card-product .face{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+.card-product .face p {
+margin: 40px 0;
+align-self: flex-start;
+}
+.card-product .face span{
+align-self: flex-start;
+color: var(--first-color);
+}
+.card-product .face img{
+width: 100px;
+}
+.card-product .buttons a{
+padding: 10px 40px;
+background-color: var(--second-color);
+margin-bottom: 5px;
+font-size: 14px;
+color: black;
+width: 150px;
+text-align: center;
+transition: .3s linear;
+visibility: hidden;
+
+}
+.card-product .buttons a:first-child{
+transform: translateX(50%);
+}
+.card-product .buttons a:last-child{
+transform: translateX(-50%);
+}
+.card-product .buttons{
+position: absolute;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+left: 50%;
+transform: translateX(-50%);
+transition: var(--main-transition);
+overflow: hidden;
+}
+.card-product:hover .buttons a:first-child,
+.card-product:hover .buttons a:last-child{
+transform: translateX(0);
+visibility: visible;
+}
+

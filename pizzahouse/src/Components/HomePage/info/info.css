@@ -1,0 +1,92 @@
+.services,
+.contact {
+position: relative;
+margin: 50px 0 50px 0;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: black;
+background-image: url(../../imgs/Infoimg/best-atmsophere.jpg);
+background-size: cover;
+height: 44vh;
+
+}
+.contact{
+background-image: url(../../imgs/Infoimg/bg-4.jpg);
+
+}
+.services::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(68, 67, 67, 0.5);
+
+} 
+
+.services .info {
+z-index: 1000;
+color: white;
+display: flex;
+justify-content: space-between;
+flex-direction: column;
+}
+.services .info a{
+padding: 10px 30px;
+background-color: var(--third-color);
+color: white;
+width: fit-content;
+transition: var(--main-transition);
+}
+.services .info a:hover{
+color: black;
+background-color: var(--second-color);
+}
+.services .info h2{
+letter-spacing: 1.5px;
+font-size: 35px;
+}
+.services .info p{
+margin: 10px 0 10px 0;
+}
+.services .info p{
+margin: 10px 0 10px 0;
+}
+.services .info .active{
+position: relative;
+}
+
+.services .info .active::before{
+content: "";
+position: absolute;
+left: -7%;
+top: 50%;
+transform: translateY(-50%);
+width: 25px;
+height: 3px;
+background-color: var(--second-color);
+}
+.contact .info .active::before{
+background-color: var(--first-color);
+}
+
+
+
+@media (max-width:767px) {
+.services .info h2{
+    font-size: 26px;
+    }   
+.services .info p{
+    font-size: 16px;
+    text-align: center;
+    }
+.services .info {
+    align-items: center;
+    
+    }
+.services .info .active::before{
+    left: -20%;
+    }
+}

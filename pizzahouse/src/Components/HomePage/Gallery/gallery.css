@@ -1,0 +1,24 @@
+.gallary{
+display: grid;
+max-width: 100%;
+grid-template-columns: repeat(auto-fill , minmax(50%,1fr));
+gap: 25px;
+height: 80vh;
+}
+
+
+.gallary .box{
+display: flex;
+align-items: center;
+gap: 5px;
+}
+.gallary .two{
+flex-wrap: wrap;
+
+}
+.gallary .one{
+overflow: hidden;
+}
+.box img{
+max-width: 100%;
+}

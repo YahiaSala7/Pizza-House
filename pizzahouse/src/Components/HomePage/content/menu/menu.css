@@ -3,21 +3,21 @@
 }
 .menu .container{
     display: grid;
+    max-width: 100%;
     grid-template-columns: repeat(auto-fill , minmax(360px,1fr));
     gap: 25px;
 }
 .menu .container .card{
 position: relative;
-width: 370px;
-height: 278px;
+width: 95%;
+aspect-ratio: 1.33;
 background-color: white;
 overflow: hidden;
 transition: var(--main-transition);
-margin: auto;
 }
 .menu .container .card img{
 transition: .3s;
-
+width: 100%;
 }
 .menu .container .card:hover img{
  transform: scale(1.1);
@@ -63,11 +63,10 @@ color: black;
 }
 
 
-.menu .container .card h3{
+.menu .container .card .circle-icon h3{
 position: absolute;
-top: 65%;
-transform: translateY(-50%);
 color: white;
+bottom: -30px;
 left: 50%;
 transform: translateX(-50%);
 transition: var(--main-transition);
@@ -79,7 +78,7 @@ color: var(--second-color);
 cursor: pointer;
 }
 
-@media(max-width:991px){
+/* @media(max-width:991px){
     .menu .container{
     display: flex;
     flex-direction: column;
@@ -91,4 +90,4 @@ flex-basis: 100%;
 .menu .container .card img{
 text-align: center;
 }
-}
+} */

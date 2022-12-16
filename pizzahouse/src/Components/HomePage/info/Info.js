@@ -1,19 +1,16 @@
 import React from 'react'
-import './servicse.css'
+import './info.css'
 import '../../general.css'
-import ser  from '../../imgs/Servcies/best-atmsophere.jpg'
-function services() {
+function Info(Props) {
   return (
-    <div className='services'>
+    <div className={Props.cn}>
     <div className="info">
-    <h2>Best atmosphere</h2>
-    <p>PizzaHouse is the place of the best pizza and high-quality service.</p>
-    <p>Ben Smith, Founder</p>
-    <a href="#">View Our Services</a>
+    <h2>{Props.h2}</h2>
+    <p>{Props.p1}</p>
+    <p className='active'>{Props.p2}</p>
+    <a href="#">{Props.a}</a>
     </div>
-    <div className="img">
-        <img src={ser} alt="" />
-    </div>
+
     </div>
   )
 }
@@ -25,4 +22,4 @@ function services() {
 // LandSection.style.width=`${width.toString()}px - 20px `
 // LandSection.style.height=`${width.toString() / 1.9}px `
 // }
-export default services
+export default Info
