@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 import "./paragraph.css";
 import k2 from "./img/about-1-835x418.jpg";
+import { FontAwesomeIcon  } from '@fortawesome/react-fontawesome';
+import { faHelicopter} from '@fortawesome/free-solid-svg-icons';
+import { faPizzaSlice} from '@fortawesome/free-solid-svg-icons';
+import { faLeaf} from '@fortawesome/free-solid-svg-icons';
 class paragraph extends Component {
   render() {
     return (
@@ -106,6 +110,27 @@ class paragraph extends Component {
             </ul>
             <button className="button">Contact US</button>
           </div>
+        </div>
+        <div className="ourfeatures">
+          <div className="boxes">
+            <div className="box1">
+       <FontAwesomeIcon icon={faHelicopter} className='icons'></FontAwesomeIcon>
+              <h3>Free Delivery</h3>
+              <p>Lotus advenas ducunt ad gemna. Ubi est domesticus domina heu.</p>
+            </div>
+            <div className="box2">
+            <FontAwesomeIcon icon={faPizzaSlice} className='icons'></FontAwesomeIcon>
+              <h3>20+ Pizza Options</h3>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh</p>
+            </div>
+            <div className="box3">
+            <FontAwesomeIcon icon={faLeaf} className='icons'></FontAwesomeIcon>
+              <h3>Fresh Ingredients</h3>
+              <p>Albus, dexter particulas grauiter consumere de ferox, bi-color abactus.</p>
+            </div>
+      
+          </div>
+          
         </div>
       </div>
     );

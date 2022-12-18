@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 .paragraph{
     display: flex;
 }
@@ -11,8 +14,7 @@
     margin-left: 100px;
 }
 .Aboutusparag h3{
-    font-size: large;
-    font-size: 50px;
+    font-size: 40px;
     margin-bottom: 30px;
 }
 .Aboutusparag p {
@@ -68,8 +70,7 @@ line-height: 1.8;
     margin-left: 100px;
 }
 .ourvalues h3{
-    font-size: large;
-    font-size: 50px;
+    font-size: 40px;
     margin-bottom: 30px;
 }
 .ourvalues p {
@@ -126,5 +127,48 @@ line-height: 1.8;
     border-style: none;
 
 }
+.ourfeatures{
+    display: flex;
+    position: relative;
+    bottom: -1450px;
+    background-color: rgba(119, 119, 119, 0.13);
+    width: 100%;
+    padding: 50px;
+}
+.ourfeatures .boxes{
+display: flex;
+flex-wrap: wrap;
+margin-right: 40px;
+margin-left: 100px;
+flex-direction: row;
+flex-basis: auto;
 
+}
+.ourfeatures .boxes h3{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px;
+}
+.ourfeatures .boxes p{
+    font-size: 15px;
+    color: #777;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    width: 50%;
+    
+}
+.ourfeatures .icons{
 
+    display: inline-block;
+    text-align: center;
+    height: 70px;
+    width: 70px;
+    margin-top: 4px;
+    font-size: 40px;
+    line-height: 70px;
+    color: #151515;
+    background: yellow;
+    border-radius: 50%;
+    box-shadow: 12px 12px 20px 0 rgb(0 0 0 / 15%);
+    margin-right: auto;
+}
