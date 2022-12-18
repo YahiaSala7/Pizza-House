@@ -18,7 +18,6 @@ transform: skew(25deg)
 display: flex;
 justify-content: space-around;
 position: relative;
-
 }
 .part-one{
 flex-basis: 30%;

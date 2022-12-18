@@ -1,14 +1,15 @@
 import React, { Component } from "react";
 import "./paragraph.css";
-import k2 from "./img/about-1-835x418.jpg";
-import { FontAwesomeIcon  } from '@fortawesome/react-fontawesome';
-import { faHelicopter} from '@fortawesome/free-solid-svg-icons';
-import { faPizzaSlice} from '@fortawesome/free-solid-svg-icons';
-import { faLeaf} from '@fortawesome/free-solid-svg-icons';
+import k2 from '../../imgs/Gallary/gallery-2-631x587.jpg';
+// import { FontAwesomeIcon  } from '@fortawesome/react-fontawesome';
+// import { faHelicopter} from '@fortawesome/free-solid-svg-icons';
+// import { faPizzaSlice} from '@fortawesome/free-solid-svg-icons';
+// import { faLeaf} from '@fortawesome/free-solid-svg-icons';
 class paragraph extends Component {
   render() {
     return (
-      <div>
+      <div className="parent">
+      <div className='container'>
         <div className="paragraph">
           <div className="Aboutusparag">
             <h3>A FEW WORDS ABOUT US</h3>
@@ -111,7 +112,7 @@ class paragraph extends Component {
             <button className="button">Contact US</button>
           </div>
         </div>
-        <div className="ourfeatures">
+        {/* <div className="ourfeatures">
           <div className="boxes">
             <div className="box1">
        <FontAwesomeIcon icon={faHelicopter} className='icons'></FontAwesomeIcon>
@@ -131,7 +132,8 @@ class paragraph extends Component {
       
           </div>
           
-        </div>
+        </div> */}
+      </div>
       </div>
     );
   }
