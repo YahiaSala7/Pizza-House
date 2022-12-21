@@ -6,7 +6,7 @@ import MainTitle from '../MainTitle'
 import Menu from './content/menu/Menu'
 import Info from './info/Info'
 import CardPage from '../pruducts/CardPage'
-import Gallery from './Gallery/Gallery'
+// import Gallery from './Gallery/Gallery'
 
 function homePage() {
   return (
@@ -22,7 +22,7 @@ function homePage() {
         <MainTitle main="What people say "/>  
         {/* <Gallery/>   */}
 
-        {/* <Footer/> */}
+        <Footer/>
     </div>
   )
 }

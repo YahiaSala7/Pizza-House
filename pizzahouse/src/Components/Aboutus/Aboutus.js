@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Header from '../HomePage/Header/Header';
 import Land from './land/land';
-import Paragraph from './paragraph/paragraph';
+// import Paragraph from './paragraph/paragraph';
 
 class Aboutus extends Component {
   render() {
@@ -9,7 +9,7 @@ class Aboutus extends Component {
       <div>
         <Header />
         <Land />
-        <Paragraph />
+        {/* <Paragraph /> */}
         
       </div>
     )

@@ -1,0 +1,85 @@
+footer{
+background-color: #38393b;
+color: #fff;
+position: relative;
+}
+footer span{
+    color: rgba(255, 255, 255, 0.8);
+
+}
+footer .container{
+display: flex;
+flex-direction: column;
+max-width: 100%;
+}
+.inf:not(:last-child)::before{
+content: "";
+position: absolute;
+height: 1px;
+width: 100%;
+left: 0;
+background-color: rgba(255, 255, 255, 0.1);;
+top: 65%;
+border-bottom: 1px solid rgba(255, 255, 255, 0.1);;
+}
+.inf:not(:last-child)::after{
+content: "";
+position: absolute;
+height: 1px;
+width: 100%;
+left: 0;
+background-color: rgba(255, 255, 255, 0.1);;
+top: 85%;
+border-bottom: 1px solid rgba(255, 255, 255, 0.1);;
+}
+.inf{
+width: 100%;
+display: flex;
+justify-content: space-between;
+padding: 20px 0;
+}
+footer .container .one{
+    justify-content: space-around;
+}
+footer .container .one ul li a{
+color: rgba(255, 255, 255, 0.8);
+transition: var(--main-transition);
+font-size: 20px;
+}
+
+footer .container  ul li{
+    margin: 20px 0;
+
+}
+footer .container .two img{
+max-width: 100%;
+}
+footer .container .two {
+    align-items: center;
+
+}
+footer .container .two span {
+margin-left:10px ;
+}
+footer .container .one ul li a:hover,
+footer .container .two span:hover{
+color: var(--second-color);
+cursor: pointer;
+}
+@media (max-width:767px) {
+    footer .container .two ,  
+    footer .container .three{
+        flex-direction: column;
+        align-items: center;
+    }   
+    footer .container .two >div,  
+    footer .container .three span{
+        margin: 10px 0;
+    } 
+    .inf:not(:last-child)::before{
+        top: 50%;
+        }
+        .inf:not(:last-child)::after{
+        top: 75%;
+        }  
+}
