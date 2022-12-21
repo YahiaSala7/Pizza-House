@@ -1,0 +1,18 @@
+.paragraph{
+    display: none;
+    left: 0;
+    bottom: -400px;
+    width: 50%;
+    margin-top: auto;
+    padding: auto;
+    margin-left: 100px;
+}
+.paragraph h3{
+    font-size: large;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.paragraph p {
+color: #777;
+line-height: 1.8;
+}

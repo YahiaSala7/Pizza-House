@@ -4,10 +4,22 @@ padding-bottom: 50px;
 }
 .paragraph {
     display: flex;
+    position: relative;
 
 }
-.Aboutusparag{
-
+.container{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+}
+.container .photo{
+    position: relative;
+    bottom: -498px;
+    left: -339px;
 }
 .Aboutusparag h3{
     font-size: 40px;
@@ -17,108 +29,11 @@ padding-bottom: 50px;
 color: #777;
 line-height: 1.8;
 }
-.Ourmission{
-    display: none;
-    left: 0;
-    bottom: -400px;
-    width: 50%;
-    margin-top: auto;
-    padding: auto;
-    margin-left: 100px;
-}
-.Ourmission h3{
-    font-size: large;
-    font-size: 50px;
-    margin-bottom: 30px;
-}
-.Ourmission p {
-color: #777;
-line-height: 1.8;
-}
-.ourgoals{
-    display: none;
-    left: 0;
-    bottom: -400px;
-    width: 50%;
-    margin-top: auto;
-    padding: auto;
-    margin-left: 100px;
-}
-.ourgoals h3{
-    font-size: large;
-    font-size: 50px;
-    margin-bottom: 30px;
-}
-.ourgoals p {
-color: #777;
-line-height: 1.8;
-}
-.ourvalues{
-    display: none;
-    left: 0;
-    bottom: -400px;
-    width: 50%;
-    margin-top: auto;
-    padding: auto;
-    margin-left: 100px;
-}
-.ourvalues h3{
-    font-size: 40px;
-    margin-bottom: 30px;
-}
-.ourvalues p {
-color: #777;
-line-height: 1.8;
-}
-.paragraph .photo{
-    margin-left: 100px;
-    left: 0;
-    bottom: -900px;
 
-}
-.Leftparagraoh h5{
-    right: 0;
-    bottom: 0px;
-    font-size: 25px;
-    margin-right: 50px;
-}
-.Leftparagraoh .parragraphs{
-    margin-right: 50px;
-    right: 150px;
-    bottom: -400px;
-    font-size: 25px;
-    line-height: 3;
-    list-style: none;
-    color:#777;
-}
-.Leftparagraoh .parragraphs li a {
-    list-style: none;
-    color:black;
-  
-}
-.parragraphs li::before{
-    content: "";
-    width: 200%;
-    height: 1px;
-    background-color: #777;
-    bottom: 0px;
-    left: 3%;
-    
-}
-.Leftparagraoh .button{
-    margin-right: 40px;
-    right: 120px;
-    bottom: -530px;
-    font-size: 25px;
-    padding: 20px;
-    background-color: yellow;
-    border-style: none;
-
-}
 .ourfeatures{
     display: flex;
     position: relative;
-    bottom: -1450px;
+    bottom: -818px;
     background-color: rgba(119, 119, 119, 0.13);
     width: 100%;
     padding: 50px;

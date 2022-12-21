@@ -6,7 +6,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 position: relative;
-height: 44vh;
+height: 57vh;
 }
 .land::before{
     content: "";

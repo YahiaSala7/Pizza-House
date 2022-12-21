@@ -8,21 +8,29 @@ import Info from './info/Info'
 import CardPage from '../pruducts/CardPage'
 // import Gallery from './Gallery/Gallery'
 
-function homePage() {
+function homePage(props) {
   return (
     <div>
         <Header/>
         <Landing/>  
         <MainTitle main="Our Best Menu "/>  
         <Menu/>
-        <Info p1="PizzaHouse is the place of the best pizza and high-quality service." p2="Yahia Salah, Founder" a="View Our Services" h2="Best atmosphere" cn="services"/>
+        <Info p1="PizzaHouse is the place of the best pizza and high-quality service." p2="Moataz Essam, Founder" a="View Our Services" h2="Best atmosphere" cn="services"/>
         <MainTitle main="Selected Pizzas "/>  
         <CardPage/>
         <Info  p2="Taste some of the best PizzaHouse salads!" a="Contact Us" h2="-30% on all salads & drinks" cn="contact services"/>
-        <MainTitle main="What people say "/>  
+        <MainTitle main="What people say "/>
+        <div className='norb'>
+  <p>number of ordered product :</p>
+</div>  
         {/* <Gallery/>   */}
 
+<<<<<<< HEAD
         <Footer/>
+=======
+        {/* <Footer/> */}
+        
+>>>>>>> fb17b34e192730053f96674f07ec77f61da5c693
     </div>
   )
 }
