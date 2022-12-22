@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 function NavBar() {
-  
+
   return (
     <div className='nav'>
         <ul>
