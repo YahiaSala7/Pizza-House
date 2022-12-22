@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./paragraph.css";
-import k2 from '../../imgs/Gallary/gallery-2-631x587.jpg';
+import k2 from '../../imgs/Gallery/gallery-2-631x587.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHelicopter } from '@fortawesome/free-solid-svg-icons';
 import { faPizzaSlice } from '@fortawesome/free-solid-svg-icons';

@@ -1,24 +1,24 @@
 .gallary{
 display: flex;
 justify-content: space-between;
-flex-wrap: wrap;
 gap: 5px;
 height: 80vh;
+width: 100%;
 }
 
 
 .gallary .box{
 display: flex;
 align-items: center;
-flex-wrap: wrap;
-
 gap: 5px;
 
 }
 .gallary .two{
+flex-wrap: wrap;
 }
 .gallary .one{
 
 }
 .box img{
+max-width: 100%;
 }

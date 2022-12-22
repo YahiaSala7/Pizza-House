@@ -1,0 +1,104 @@
+.table{
+padding-top: 50px;
+padding-bottom: 50px;
+}
+.table .container{
+max-width: 100%;
+}
+.table .container form{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+max-width: 85%;
+padding: 70px;
+box-shadow: 0 0 10px 0 rgb(0 0 0 / 5%);
+margin: auto;
+}
+
+.table .container form .message,
+.table .container form .message{
+    width: 100%;
+}
+.table .container form .row-one{
+flex-basis: 30%;
+}
+
+
+
+.table .container form  input[type="text"],
+.table .container form  input[type="email"],    
+.table .container form  select{
+border: 1px solid var(--p-color);
+padding: 10px;
+margin-bottom: 30px;
+width: 100%;
+}
+.table .container form  select{
+color: #777777;
+cursor: pointer;
+}
+.table .container form  select option{
+color: var(--first-color);
+
+}
+
+
+/* .table .container form  input[type="text"]:focus{
+border: none;
+} */
+.table .container form textarea{
+    width: 100%;
+    height: 100px;
+    border: 1px solid var(--p-color);
+    padding: 10px;
+}
+.table .container form  input[type="submit"]{
+padding: 20px 50px ;
+cursor: pointer;
+background-color: var(--second-color);
+color: black;
+font-size: 18px;
+border: none;
+transition: var(--main-transition);
+font-family: "Asfalto";
+}
+.table .container form  input[type="submit"]:hover{
+color: white;
+background-color:var(--third-color);
+}
+.table .container form .submit{
+display: flex;
+align-items: center;
+margin-top: 40px;
+}
+.table .container form .submit p{
+color: #777777;
+font-size: 20px;
+max-width: 400px;
+margin-left: 100px;
+
+}
+@media (max-width:991px) {
+    .table .container form{
+    flex-direction: column;
+    padding: 50px;
+    } 
+.table .container form  input[type="text"],
+.table .container form  input[type="email"],    
+.table .container form  select{
+max-width: 100%;
+}
+.table .container form .row-one{
+flex-basis: 100%;
+}
+.table .container form .submit{
+flex-direction: column;    
+}
+.table .container form .submit p{
+    color: #777777;
+    font-size: 14px;
+    margin:50px 0 0 0;
+
+    
+    }
+}
