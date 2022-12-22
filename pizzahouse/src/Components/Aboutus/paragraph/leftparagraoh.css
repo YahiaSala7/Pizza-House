@@ -1,9 +1,10 @@
 .Leftparagraoh{
     display: flex;
     position: relative;
-    right: -920px;
-    top: 62px;
+    right: 0;
+    top: 88px;
     flex-direction: column;
+    max-width: 100%;
     
 }
 .Leftparagraoh h5{

@@ -13,7 +13,6 @@ class paragraph extends Component {
       <div className="parent">
         <div className='container'>
         <Leftparagraoh  />
-          <div className="paragraph">
               <Features  header='A FEW WORDS ABOUT US' 
               paragraph=' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -92,11 +91,11 @@ class paragraph extends Component {
                   prarere in alta muta! Ecce, bubo! Nunquam promissio verpa. Talis,
                   primus fugas recte consumere de audax, festus indictio. Nunquam
                   quaestio scutum. Valebats' /> */}
-              </div>
+                    {/* <div className="photo">
+                <img src={k2} alt="" ></img>
+              </div> */}
               
-              <div className="photo">
-                <img src={k2} alt="" width="800" height="418"></img>
-              </div>
+            
             </div>
             <div className="ourfeatures">
               <div className="boxes">

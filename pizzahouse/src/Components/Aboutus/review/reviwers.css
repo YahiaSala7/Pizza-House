@@ -4,6 +4,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 1330px;
+    width: 100%;
 }
     .therev .cont .box {
         display: flex;
