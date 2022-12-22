@@ -1,14 +1,19 @@
 import './App.css';
 import HomePage from './Components/HomePage/HomePage';
 import Aboutus from './Components/Aboutus/Aboutus';
-
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 function App() {
   return (
-    <div className="App">
-  <HomePage/>
-  {/* <Aboutus /> */}
-  
-    </div>
+
+    <BrowserRouter>
+      <div className="App">
+        <Routes>
+          <Route exact path='/' element={<HomePage />} />
+          <Route path='/Aboutus' element={<Aboutus />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
+
   );
 }
 export default App;
