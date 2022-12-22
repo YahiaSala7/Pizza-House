@@ -27,7 +27,6 @@ function homePage(props) {
         <TableForm/>
         <Advantages/>
         <Footer/>
-        
     </div>
   )
 }

@@ -1,0 +1,42 @@
+.reviewersland
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 1330px;
+}
+    .therev .cont .box {
+        display: flex;
+        margin-bottom: 30px;
+        align-items: center;
+        background-color: rgb(164, 164, 7);
+        margin-top: 10px;
+        height: 20vh;
+        border-radius: 28px;
+        margin-left: 10px;
+        min-width: 643px;
+        max-width: 643px;
+    }
+    
+    .therev .cont .box img {
+        min-width: 97px;
+        max-width: 97px;
+        min-height: 97px;
+        max-height: 97px;
+        border-radius: 50%;
+        margin-right: 58px;
+        margin-bottom: 49px;
+        margin-left: 5px;
+    }
+    
+    .therev .cont .box .text {
+        line-height: 1.6;
+        margin-bottom: 61px;
+    }
+    
+    .therev .cont .box .text p {
+        text-align: left;
+        font-size: 15px;
+        max-width: 643px;
+    
+    }

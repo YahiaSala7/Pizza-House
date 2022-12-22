@@ -1,0 +1,93 @@
+.ourteams.container{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(300px,1fr));
+    gap: 20px;
+    bottom: -996px;
+    position: relative;
+}
+.ourteam{
+    position: relative;
+    top: 1100px;
+    display: grid;
+    gap: 20px;
+    margin: 20px;
+
+}
+.ourteams h1{
+    color: rgb(174, 174, 6);
+    position: relative;
+    font-size: 100px;
+    text-align: center;
+    bottom: -1003px;
+
+}
+.ourteam{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
+    padding: 60px 20px 30px;
+    background-color: #fff;
+    width: 240px;
+    bottom:-1256px;
+}
+.ourteam:hover{
+    animation: wiggle 2s linear infinite;
+}
+    
+@keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  }
+
+.ourteam .faces{
+   display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+.ourteam:hover{
+    transform: translatey(-10%);
+}
+.ourteam .faces img{
+    position: relative;
+    top: -51px;
+}
+.ourteam .faces h3{
+    font-size: 20px;
+    font-style: initial;
+    font-weight: 600;
+    top: -33px;
+    position: relative;
+}
+.ourteam .faces p{
+   color: #765;
+    font-size: 24px;
+    position: relative;
+    top: -29px;
+}
