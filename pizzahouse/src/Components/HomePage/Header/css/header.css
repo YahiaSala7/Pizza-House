@@ -55,3 +55,20 @@ width: 100%;
 height: 100%;
 left: 0;
 }
+.header .container  .lgoin a,
+.header .container  .register a{
+padding: 10px 25px ;
+cursor: pointer;
+background-color: var(--second-color);
+color: black;
+font-size: 18px;
+border: none;
+transition: var(--main-transition);
+font-family: "Asfalto";
+width:fit-content ;
+}
+.header .container  .lgoin a:hover,
+.header .container  .register a:hover{
+color: white;
+background-color:var(--third-color);
+}

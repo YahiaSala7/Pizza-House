@@ -10,18 +10,24 @@ function Desserts() {
   return (
     <div className='cardpage'>
       <div className="container">
-        <Card img={img1} name="Mashrome pizza" price="24$"/>
-        <Card img={img2} name="Chicken pizza" price="$21"/>
-        <Card img={img3} name="Halibino Pizza" price="$27"/>
-        <Card img={img4} name="Margherita Pizza" price="$20 "/>
-        <Card img={img1} name="Mashrome pizza" price="24$"/>
-        <Card img={img2} name="Chicken pizza" price="$21"/>
-        <Card img={img3} name="Halibino Pizza" price="$27"/>
-        <Card img={img4} name="Margherita Pizza" price="$20 "/>
-        <Card img={img1} name="Mashrome pizza" price="24$"/>
-        <Card img={img2} name="Chicken pizza" price="$21"/>
-        <Card img={img3} name="Halibino Pizza" price="$27"/>
-        <Card img={img4} name="Margherita Pizza" price="$20 "/>
+        <Card img={img1} name="Arabic Fattoush" price="18$"/>
+        <Card img={img1} name="Arabic Fattoush" price="18$"/>
+        <Card img={img1} name="Arabic Fattoush" price="18$"/>
+        <Card img={img1} name="Arabic Fattoush" price="18$"/>
+        <Card img={img1} name="Arabic Fattoush" price="18$"/>
+        <Card img={img1} name="Arabic Fattoush" price="18$"/>
+        <Card img={img1} name="Arabic Fattoush" price="18$"/>
+        <Card img={img1} name="Arabic Fattoush" price="18$"/>
+        <Card img={img1} name="Arabic Fattoush" price="18$"/>
+        <Card img={img1} name="Arabic Fattoush" price="18$"/>
+        <Card img={img1} name="Arabic Fattoush" price="18$"/>
+        <Card img={img1} name="Arabic Fattoush" price="18$"/>
+        <Card img={img1} name="Arabic Fattoush" price="18$"/>
+        <Card img={img1} name="Arabic Fattoush" price="18$"/>
+        <Card img={img1} name="Arabic Fattoush" price="18$"/>
+        <Card img={img1} name="Arabic Fattoush" price="18$"/>
+        <Card img={img1} name="Arabic Fattoush" price="18$"/>
+        <Card img={img1} name="Arabic Fattoush" price="18$"/>
       </div>
     </div>
   )
