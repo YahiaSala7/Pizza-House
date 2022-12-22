@@ -25,12 +25,10 @@ function homePage(props) {
 </div>  
         {/* <Gallery/>   */}
 
-<<<<<<< HEAD
+
         <Footer/>
-=======
         {/* <Footer/> */}
         
->>>>>>> fb17b34e192730053f96674f07ec77f61da5c693
     </div>
   )
 }

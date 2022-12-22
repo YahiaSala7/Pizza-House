@@ -13,7 +13,7 @@ import mh from '../imgs/Our team photo/moys.jpg'
 import './paragraph/Ourteam.css';
 import './review/reviwers.css'
 import Reviwers from './review/reviwers';
-import  kk from '../imgs/Gallary/gallery-2-631x587.jpg';
+import  kk from '../imgs/Gallery/gallery-2-631x587.jpg';
 
 class Aboutus extends Component {
   render() {
@@ -22,7 +22,7 @@ class Aboutus extends Component {
         <Header />
         <Land />
         <Paragraph />
-    
+
         <div className='ourteams'>
         <h1>Our Team :</h1>
         <div className='container'>

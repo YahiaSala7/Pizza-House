@@ -5,8 +5,8 @@ import Aboutus from './Components/Aboutus/Aboutus';
 function App() {
   return (
     <div className="App">
-  <HomePage/>
-  {/* <Aboutus /> */}
+  {/* <HomePage/> */}
+  <Aboutus />
     </div>
   );
 }
