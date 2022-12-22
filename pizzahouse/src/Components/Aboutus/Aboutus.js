@@ -25,7 +25,7 @@ class Aboutus extends Component {
     return (
       <div>
         <Header />
-        <Land />
+        <Land title="About Us"/>
         {/* <Paragraph /> */}    
         <Paragraph />
 

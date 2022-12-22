@@ -1,23 +1,51 @@
-.landing{
+.landing,
+.landing-tow{
 position: relative;
 background-color: white;
-background-image: url(../../../imgs/Landing/pizza.jpg);
+background-image: url(../../../imgs/Landing/pizza22.jpg);
 background-size: cover;
 height: 100vh;
 display: flex;
 justify-content: center;
-
+overflow: hidden;
+transition: var(--main-transition);
 }
-.landing img {
-width: 100%;
+.landing-tow{
+background-image: url(../../../imgs/Landing/pizza.jpg);
+opacity: 1;
 }
-
 .landing .info
 {
 display: flex;
 flex-direction: column;
 justify-content: center;
 }
+.landing .info .i{
+position: absolute;
+background-color: rgba(255, 255, 255, 0.2);
+padding: 20px 40px ;
+cursor: pointer;
+}
+.landing .info .icon-left{
+left: -35px;
+transform: skew(15deg)
+}
+.landing .info .icon-right{
+right: -35px;
+transform: skew(-15deg)
+}
+.landing .info  .icon{
+color: #ffff;
+font-size: 30px;
+}
+.landing .info .icon-left .icon{
+transform: translateX(60%) skew(-15deg);
+}
+.landing .info .icon-right .icon{
+transform: translateX(-60%) skew(15deg);
+}
+
+
 .landing h1{
     text-transform: uppercase;
     color: white;
