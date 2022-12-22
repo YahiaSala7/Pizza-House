@@ -6,8 +6,8 @@ function Card(props) {
 <div className='card-product'>
 <div className="face">
 <img src={props.img} alt="" />
-        <p>{props.name}</p>
-        <span>{props.price}</span>
+  <p>{props.name}</p>
+  <span>{props.price}</span>
 </div>
 <div className="buttons">
     <a href="#">Add to cart</a>

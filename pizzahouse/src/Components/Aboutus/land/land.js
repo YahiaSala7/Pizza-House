@@ -7,7 +7,7 @@ export class land extends Component {
     return (
       <div >
         <div className='land'>
-     <h2>About us</h2>
+     <h2>{this.props.title}</h2>
    </div>
         
       </div>
