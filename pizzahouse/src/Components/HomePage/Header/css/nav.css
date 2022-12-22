@@ -6,7 +6,6 @@ justify-content: center;
 
 }
 .nav ul{
-/* flex-basis: 100%; */
 display: flex;
 justify-content: space-around;
 }
@@ -43,4 +42,16 @@ transform: translateX(-50%);
     .nav ul{
         display: none;
     } 
+ 
+}
+@media (min-width:991px) {
+    .nav .icon{
+        display: none;
+    }
+ 
+}
+.nav .icon{
+font-size: 25px;
+align-self: flex-start;
+z-index: 1000;
 }

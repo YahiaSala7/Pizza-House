@@ -1,7 +1,10 @@
 import React from 'react'
 import './css/nav.css'
 import '../../general.css'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 function NavBar(Props) {
+
   return (
     <div className='nav'>
         <ul>
@@ -10,6 +13,7 @@ function NavBar(Props) {
             <li><a href="#">Memu</a></li>
             <li><a href="#">Contacts</a></li>
         </ul>
+        <FontAwesomeIcon icon={faBars} className="icon"></FontAwesomeIcon>
     </div>
   )
 }
