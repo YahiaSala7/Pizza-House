@@ -6,7 +6,7 @@ import MainTitle from '../MainTitle'
 import Menu from './content/menu/Menu'
 import Info from './info/Info'
 import CardPage from '../pruducts/CardPage'
-import Gallery from './Gallery/Gallery'
+// import Gallery from './Gallery/Gallery'
 
 function homePage(props) {
   return (
@@ -25,8 +25,12 @@ function homePage(props) {
 </div>  
         {/* <Gallery/>   */}
 
+<<<<<<< HEAD
+        <Footer/>
+=======
         {/* <Footer/> */}
         
+>>>>>>> fb17b34e192730053f96674f07ec77f61da5c693
     </div>
   )
 }

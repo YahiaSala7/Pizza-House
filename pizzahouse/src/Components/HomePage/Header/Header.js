@@ -8,7 +8,7 @@ function Header() {
     <div className='header'>
       <div className="container">
     <div className='part-one'><img src={logo} alt="Logo of page" /></div>
-    <NavBar />
+    <NavBar path="../../Aboutus/Aboutus.js"/>
     </div>
     </div>
   )

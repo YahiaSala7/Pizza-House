@@ -14,7 +14,6 @@ import './paragraph/Ourteam.css';
 import './review/reviwers.css'
 import Reviwers from './review/reviwers';
 import  kk from '../imgs/Gallary/gallery-2-631x587.jpg';
-import  k2 from '../imgs/Gallary/gallery-5-311x289.jpg';
 
 class Aboutus extends Component {
   render() {
