@@ -5,17 +5,18 @@ import  './css/header.css'
 import '../../general.css'
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
+import { NavLink } from 'react-router-dom'
 function Header() {
   return (
     <div className='header'>
       <div className="container">
-        <div className='part-one'><img src={logo} alt="Logo of page" /></div>
+        <div className='part-one'>
+          <img src={logo} alt="Logo of page" /></div>
           <NavBar />
           <div className="cart">
           <FontAwesomeIcon icon={faCartShopping} className="icon"></FontAwesomeIcon>
-          <a href="#"></a>
-        </div>
+          <NavLink to="/AddtoCart"></NavLink>
+          </div>
       </div>
     </div>
   )
