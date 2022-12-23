@@ -14,14 +14,14 @@ function Drinks() {
   return (
     <div className='cardpage'>
       <div className="container">
-        <Card img={img1} name="lemon juice" price="18$"/>
-        <Card img={img2} name="Orange juice" price="18$"/>
-        <Card img={img3} name="strawberry juice" price="18$"/>
-        <Card img={img4} name="Watermelon juice" price="18$"/>
-        <Card img={img5} name="Coca-Cola" price="18$"/>
-        <Card img={img6} name="mango juice" price="18$"/>
-        <Card img={img7} name="Strawberry Milkshake" price="18$"/>
-        <Card img={img8} name="ice coffee" price="18$"/>
+        <Card img={img1} name="lemon juice" price="9$"/>
+        <Card img={img2} name="Orange juice" price="8$"/>
+        <Card img={img3} name="strawberry juice" price="9$"/>
+        <Card img={img4} name="Watermelon juice" price="7$"/>
+        <Card img={img5} name="Coca-Cola" price="10$"/>
+        <Card img={img6} name="mango juice" price="7$"/>
+        <Card img={img7} name="Strawberry Milkshake" price="12$"/>
+        <Card img={img8} name="ice coffee" price="10$"/>
       </div>
     </div>
   )

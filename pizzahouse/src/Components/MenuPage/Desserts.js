@@ -14,14 +14,14 @@ function Desserts() {
   return (
     <div className='cardpage'>
       <div className="container">
-        <Card img={img1} name="/Cheesecake" price="18$"/>
-        <Card img={img2} name="Crème caramel" price="18$"/>
-        <Card img={img3} name="Gelatin pudding" price="18$"/>
-        <Card img={img4} name="Kunafa with Nuts" price="18$"/>
-        <Card img={img5} name="Molten chocolate cake" price="18$"/>
-        <Card img={img6} name="Chocolate ice cream" price="18$"/>
+        <Card img={img1} name="Cheesecake" price="18$"/>
+        <Card img={img2} name="Crème caramel" price="13$"/>
+        <Card img={img3} name="Gelatin pudding" price="14$"/>
+        <Card img={img4} name="Kunafa with Nuts" price="16$"/>
+        <Card img={img5} name="Molten chocolate cake" price="14$"/>
+        <Card img={img6} name="Chocolate ice cream" price="17$"/>
         <Card img={img7} name="ice cream cup with strawberries" price="18$"/>
-        <Card img={img8} name="waffles with strawberries" price="18$"/>
+        <Card img={img8} name="waffles with strawberries" price="14$"/>
       </div>
     </div>
   )
