@@ -3,6 +3,8 @@ import HomePage from './Components/HomePage/HomePage';
 import Aboutus from './Components/Aboutus/Aboutus';
 import MenuPage from './Components/MenuPage/MenuPage';
 import Cart from './Components/AddtoCart/Cart';
+import Login from './Components/RegisterAndLogIn/Login';
+import Register from './Components/RegisterAndLogIn/Register';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
@@ -16,6 +18,8 @@ function App() {
           <Route exact path='/' element={<HomePage />} />
           <Route path='/Aboutus' element={<Aboutus />} />
           <Route path='/Menu' element={<MenuPage/>}/>
+          <Route path='/Login' element={<Login />} />
+          <Route path='/Register' element={<Register/>}/>
           {/* <Route path='/Contacts' element={<ContactsPage/>}/> */}
           <Route path='/AddtoCart' element={<Cart/>}/>
         </Routes>
