@@ -25,8 +25,7 @@ class Aboutus extends Component {
     return (
       <div>
         <Header />
-        <Land title="About Us"/>
-        {/* <Paragraph /> */}    
+        <Land title="About Us"/>   
         <Paragraph />
         <div className='ourteams'>
         <h1>Our Team :</h1>
