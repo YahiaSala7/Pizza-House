@@ -1,51 +1,59 @@
 .parent{
 padding-top: 50px;
 padding-bottom: 50px;
+width: 100%;
+align-items: center;
 }
-.paragraph {
-    display: flex;
-    position: relative;
 
-}
-.container{
+.parent .container{
     display: flex;
-    position: relative;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    align-content: center;
+    width: 100%;
+    max-width: 100%;
     justify-content: space-between;
+    align-content: space-between;
+    align-items: center;
 }
 .container .photo{
     position: relative;
     bottom: -498px;
     left: -339px;
 }
+.container .photo img{
+    height: 426px;
+    position: relative;
+    bottom: -21px;
+    left: -88px;
+    max-width: 100%;
+}
 .Aboutusparag h3{
     font-size: 40px;
     margin-bottom: 30px;
+    max-width: 100%;
 }
 .Aboutusparag p {
 color: #777;
 line-height: 1.8;
+max-width: 100%;
+align-items: center;
 }
 
 .ourfeatures{
     display: flex;
     position: relative;
-    bottom: -818px;
+    bottom: -600px;
     background-color: rgba(119, 119, 119, 0.13);
     width: 100%;
     padding: 50px;
 }
 .ourfeatures .boxes{
-display: flex;
-flex-wrap: wrap;
-margin-right: 40px;
-margin-left: 100px;
-flex-direction: row;
-flex-basis: auto;
-
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 20px;
+    margin-left: 20px;
+    flex-direction: row;
+    flex-basis: fit-content;
+    position: relative;
+    width: 100%;
 }
 .ourfeatures .boxes h3{
     font-size: 20px;
@@ -62,7 +70,7 @@ flex-basis: auto;
 }
 .ourfeatures .icons{
 
-    display: inline-block;
+    display: flex;
     text-align: center;
     height: 70px;
     width: 70px;

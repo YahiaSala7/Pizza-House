@@ -8,7 +8,7 @@ import Info from './info/Info'
 import CardPage from '../pruducts/CardPage'
 import TableForm from './Table/TableForm'
 import Advantages from './advantages/Advantages'
-// import Gallery from './Gallery/Gallery'
+import Gallery from './Gallery/Gallery'
 
 function homePage(props) {
   return (

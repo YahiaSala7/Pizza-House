@@ -1,13 +1,13 @@
 .rev{
-    background-color: white;
     background-image: url(../../imgs/Landing/pizza22.jpg);
-    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     height: 66vh;
-    top: 1200px;
+    width: 100%;
+    margin-top: 80px;
+    margin-bottom: 80px;
     }
     .rev::before{
         content: "";
