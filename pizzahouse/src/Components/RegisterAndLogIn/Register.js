@@ -1,16 +1,11 @@
 import React from 'react'
 import Footer from '../HomePage/Footer/Footer'
 import Header from '../HomePage/Header/Header'
-import Land from '../Aboutus/land/land'
-import MainTitle from '../MainTitle'
-
 function Register() {
   return (
     <div>
     <Header/>
     
-    <Land title="Register"/>
-    <Register/>
     <label for="First Name"><b>First Name</b></label>
     <input type="text" placeholder="Enter First Name" name="First Name" id="First Name" required/>
 
