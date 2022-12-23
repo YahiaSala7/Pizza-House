@@ -13,12 +13,12 @@ function Header() {
         <div className='part-one'>
           <img src={logo} alt="Logo of page" /></div>
           <NavBar />
-          <div className="cart">
+      <div className="lgoin"><a href="#">Log in</a></div>
+      <div className="register"><a href="#">Register</a></div>
+      <div className="cart">
           <FontAwesomeIcon icon={faCartShopping} className="icon"></FontAwesomeIcon>
           <NavLink to="/AddtoCart"></NavLink>
           </div>
-      <div className="lgoin"><a href="#">Log in</a></div>
-      <div className="register"><a href="#">Register</a></div>
       </div>
     </div>
   )

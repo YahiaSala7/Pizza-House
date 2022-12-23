@@ -9,14 +9,14 @@ import img1 from '../../imgs/Landing/pizza.jpg'
 import img2 from '../../imgs/Landing/pizza22.jpg'
 function Landing() {
 const changeBackground =()=>{
-  // const left =document.getElementById("left");
-  // const right =document.getElementById("right");
-  // const landingid =document.getElementById("landingid");
+  const left =document.getElementById("left");
+  const right =document.getElementById("right");
+  const landingid =document.getElementById("landingid");
   // landingid.style.opacity="1";
   // // imgTwo.style.opacity="0";
   // // imgThree.style.opacity="0";
-  // landingid.classList.add("landing-tow");
-  // landingid.classList.remove("landingid");
+  landingid.classList.add("landing-tow");
+  landingid.classList.remove("landingid");
 
 }
 
@@ -28,10 +28,11 @@ const changeBackground =()=>{
       <button className='view'>View Our Menu</button>
       <div className="icon-left i" id='left'>
       <FontAwesomeIcon icon={faArrowLeft} className="icon" onClick={changeBackground}></FontAwesomeIcon>
-      {/* <img src="" alt="" /> */}
+      <img src={img1} alt="" />
       </div>
       <div className="icon-right i" id='right'>
       <FontAwesomeIcon icon={faArrowRight} className="icon" onClick={changeBackground}></FontAwesomeIcon>
+      <img src={img2} alt="" />
       </div>
       </div>
     </div>

@@ -12,7 +12,6 @@ transition: var(--main-transition);
 }
 .landing-tow{
 background-image: url(../../../imgs/Landing/pizza.jpg);
-opacity: 1;
 }
 .landing .info
 {
@@ -25,6 +24,7 @@ position: absolute;
 background-color: rgba(255, 255, 255, 0.2);
 padding: 20px 40px ;
 cursor: pointer;
+transition: all .3s ease;
 }
 .landing .info .icon-left{
 left: -35px;
@@ -37,15 +37,42 @@ transform: skew(-15deg)
 .landing .info  .icon{
 color: #ffff;
 font-size: 30px;
+transition: all .3s ease;
+
 }
 .landing .info .icon-left .icon{
 transform: translateX(60%) skew(-15deg);
+transition: all .3s ease;
+
 }
 .landing .info .icon-right .icon{
 transform: translateX(-60%) skew(15deg);
 }
+.landing .i img{
+position: absolute;
+left: 100%;
+max-width: 200px;
+height: 100%;
+top: 0;
+}
+.landing .icon-left img{
+position: absolute;
+left: -100%;
+max-width: 200px;
+height: 100%;
+top: 0;
+transition: all .3s ease;
 
+}
+.landing .info  .icon-left:hover{
+left: 100px;
+background-color: var(--second-color);
+}
+.landing .info  .icon-right:hover{
+right: 120px;
+background-color: var(--second-color);
 
+}
 .landing h1{
     text-transform: uppercase;
     color: white;
@@ -77,6 +104,7 @@ background-color:var(--third-color);
     letter-spacing: 1px;
 
 }
+
 @media (max-width:1200px) {
     .landing .info h1{
     font-size: 50px;    
