@@ -14,7 +14,11 @@ function NavBar() {
             <li><NavLink to="/Menu">Menu</NavLink></li>
             <li><NavLink to="/Contacts">Contacts</NavLink></li>
         </ul>
-        <FontAwesomeIcon icon={faBars} className="icon"></FontAwesomeIcon>
+      <div className="bars" id='bars-button' >
+        <span className='line-one' id=''></span>
+        <span className='line-two'></span>
+        <span className='line-three'></span>
+      </div>
     </div>
   )
 }

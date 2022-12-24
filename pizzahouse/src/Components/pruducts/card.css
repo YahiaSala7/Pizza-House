@@ -16,6 +16,7 @@ gap: 5px;
     background-color: #fff;
     width: 240px;
     transition: var(--main-transition);
+    overflow: hidden;
 }
 @media (max-width:991px) {
     .card-product{
@@ -83,40 +84,31 @@ overflow: hidden;
 transform: translateX(0);
 visibility: visible;
 }
-/* .card-product:hover{
-background-color:rgba(77, 53, 53, 0.555);
+.card-product .buttons a:hover{
+color: white;
+background-color: var(--third-color);
 }
+.card-product:before{
+content: "";
+position: absolute;
+border-radius: 50%;
+width: 50%;
+height: 50%;
+left: 50%;
+background-color: transparent;
+transform: translateX(-50%);
+visibility: hidden;
+transition: .2s linear;
+}
+
+.card-product:hover::before{
+visibility: visible;
+background-color: rgb(239 239 239 / 92%);
+width: 150%;
+height: 150%;
+} 
+
+
 .card-product:hover img{
 z-index: -1;
-} */
-/* .main-title:hover::before{
-    z-index: -1;
-    animation: left-move var(--main-transition) linear forwards;
-} */
-
-/* @keyframes left-move {
-    50%{
-left: 0;
-width:12px ;
-height: 12px;
-}
-100%{
-    left: 0;
-    border-radius: 0;
-    width: 100%;
-    height: 100%;
-}
- }
- @keyframes right-move {
-    50%{
-right: 0;
-width:12px ;
-height: 12px;
-}
-100%{
-    right: 0;
-    border-radius: 0;
-    width: 100%;
-    height: 100%;
-}
- } */
+} 

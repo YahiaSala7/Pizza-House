@@ -19,11 +19,6 @@ function Header() {
           <FontAwesomeIcon icon={faCartShopping} className="icon"></FontAwesomeIcon>
           <NavLink to="/AddtoCart"></NavLink>
           </div>
-<<<<<<< HEAD
-=======
-      <div className="lgoin"><NavLink to="/Login">Log in</NavLink></div>
-      <div className="register"><NavLink to="/Register">Register</NavLink></div>
->>>>>>> adf4d7d107fa3d6e68324c301552263d027ebb5a
       </div>
     </div>
   )

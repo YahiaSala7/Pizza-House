@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import ph from "./imgs/Landing/pizza21.jpg";
-import "./Contact.css";
+import ph from "../imgs/Landing/pizza22.jpg";
+import './Contact.css';
+import '../general.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
@@ -12,6 +13,7 @@ import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { text } from "@fortawesome/fontawesome-svg-core";
 import Header from "../HomePage/Header/Header";
 import Footer from "../HomePage/Footer/Footer";
+import ScrollUp from "../ScrollUp/ScrollUp";
 
 
 class Contactus extends Component {
@@ -70,25 +72,25 @@ class Contactus extends Component {
                     <li>
                       <a href="#">
                         {" "}
-                        <FontAwesomeIcon icon={faFacebook} />{" "}
+                        <FontAwesomeIcon icon={faFacebook} className="icon" />{" "}
                       </a>
                     </li>
                     <li>
                       {" "}
                       <a href="#">
-                        <FontAwesomeIcon icon={faGooglePlusG} />{" "}
+                        <FontAwesomeIcon icon={faGooglePlusG}   className="icon"/>{" "}
                       </a>
                     </li>
                     <li>
                       {" "}
                       <a href="#">
-                        <FontAwesomeIcon icon={faTwitter} />{" "}
+                        <FontAwesomeIcon icon={faTwitter}  className="icon" />{" "}
                       </a>
                     </li>
                     <li>
                       {" "}
                       <a href="#">
-                        <FontAwesomeIcon icon={faInstagram} />{" "}
+                        <FontAwesomeIcon icon={faInstagram}  className="icon"/>{" "}
                       </a>
                     </li>
                   </ul>
@@ -121,6 +123,7 @@ class Contactus extends Component {
             </div>
           </div>
         </div>
+        <ScrollUp/>
         <Footer  />
         </div>
     );

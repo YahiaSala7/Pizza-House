@@ -5,6 +5,11 @@ import foot from '../../imgs/Logo/logo-inverse-198x66.png'
 import { FontAwesomeIcon  } from '@fortawesome/react-fontawesome'
 import {faPhone} from '@fortawesome/free-solid-svg-icons'
 import {faMessage} from '@fortawesome/free-solid-svg-icons'
+import { faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faGooglePlusG } from "@fortawesome/free-brands-svg-icons";
+
 function Footer() {
   return (
     <footer>
@@ -40,12 +45,14 @@ function Footer() {
   <span>info@demolink.org</span>
 </div>
 <div className="socail">
-<FontAwesomeIcon icon="fa-brands fa-facebook" />
+<FontAwesomeIcon icon={faFacebook} ></FontAwesomeIcon>
+<FontAwesomeIcon icon={faTwitter} ></FontAwesomeIcon>
+<FontAwesomeIcon icon={faInstagram} ></FontAwesomeIcon>
+<FontAwesomeIcon icon={faGooglePlusG} ></FontAwesomeIcon>
 </div>
  </div>
       
       <div className=" inf three">
-     
       <span> 514 S. Magnolia St. Orlando, FL 32806</span>
       <span>© 2022. All Rights Reserved. Design by Yahia Salah</span>
       </div>

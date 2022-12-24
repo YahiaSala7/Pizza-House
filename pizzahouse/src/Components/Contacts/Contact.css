@@ -1,7 +1,7 @@
 .headerr{
-    text-align: center;
-    background-image: url(imgs/Infoimg/best-atmsophere.jpg);
-    display: flex;
+text-align: center;
+background-image: url(../imgs/Landing/pizza22.jpg);
+display: flex;
 justify-content: center;
 background-size: cover;
 align-items: center;
@@ -222,4 +222,11 @@ color: black;
     width: 100%;
     margin-left: -26px;
 }
+}
+.contenet .icons ul li .icon{
+color: var(--first-color);
+transition: var(--main-transition);
+}
+.contenet .icons ul li .icon:hover{
+color: var(--third-color);
 }

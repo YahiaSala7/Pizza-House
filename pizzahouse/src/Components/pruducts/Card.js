@@ -15,7 +15,6 @@ function Card(props) {
     {/* <a href="#">Go To Menu</a> */}
     
 </div>
-
     </div>
   )
 }
