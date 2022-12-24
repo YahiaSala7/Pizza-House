@@ -23,6 +23,7 @@ function App() {
           <Route path='/Login' element={<Login />} />
           <Route path='/Register' element={<Register/>}/>
           <Route path='/AddtoCart' element={<Cart/>}/>
+          {/* <Route path='/AddtoCart' element={<Cart/>}/> */}
         </Routes>
       </div>
     </BrowserRouter>

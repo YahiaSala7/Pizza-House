@@ -1,4 +1,5 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import '../../general.css'
 import './css/landing.css'
 import { useState } from 'react'
@@ -7,6 +8,7 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import img1 from '../../imgs/Landing/pizza.jpg'
 import img2 from '../../imgs/Landing/pizza22.jpg'
+
 function Landing() {
 const changeBackground =()=>{
   const left =document.getElementById("left");
@@ -19,13 +21,13 @@ const changeBackground =()=>{
   landingid.classList.remove("landingid");
 
 }
-
+const route = useNavigate()
   return (
     <div className='landing' id='landingid'>
       <div className="info">
       <h1 className='head1'>Perfect pizza </h1>
       <p className='parg1'>Experience the taste of a perfect pizza at PizzaHouse, one of the best restaurants</p>
-      <button className='view'>View Our Menu</button>
+      <button className='view'   onClick={() => route('Menu')}>View Our Menu</button>
       <div className="icon-left i" id='left'>
       <FontAwesomeIcon icon={faArrowLeft} className="icon" onClick={changeBackground}></FontAwesomeIcon>
       <img src={img1} alt="" />
