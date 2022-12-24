@@ -22,7 +22,6 @@ function App() {
           <Route path='/AddtoCart' element={<Cart/>}/>``
           <Route path='/Login' element={<Login />} />
           <Route path='/Register' element={<Register/>}/>
-          {/* <Route path='/Contacts' element={<ContactsPage/>}/> */}
           <Route path='/AddtoCart' element={<Cart/>}/>
         </Routes>
       </div>

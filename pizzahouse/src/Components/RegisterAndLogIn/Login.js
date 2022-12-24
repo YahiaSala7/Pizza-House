@@ -1,26 +1,22 @@
 import React , {Component} from 'react'
-import Footer from '../HomePage/Footer/Footer'
-import Header from '../HomePage/Header/Header'
+import { useNavigate } from 'react-router-dom'
+import './logandregister.css'
+function Login (){
+  
 
-class Login extends Component{
-  render(){
+    const route = useNavigate()
     return (
       <div>
-        <Header/>
-
-
-        <label for="uname"><b>Username</b></label>
-        <input type="text" placeholder="Enter Username" name="uname" required/>
-
-        <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" required/>
-
-        <button type="submit">Login</button>
-    
-      <Footer/>
+        <div className="login">
+            <h1>Login</h1>
+            <input type="text" name="email"  placeholder="Enter your Email"></input>
+            <input type="password" name="password"   placeholder="Enter your Password" ></input>
+            <div className="button" >Login</div>
+            <div>or</div>
+            <div className="button" onClick={() => route('/Register')}>Register</div>
+        </div>
     </div>
     )
-  }
 }
 
 export default Login
