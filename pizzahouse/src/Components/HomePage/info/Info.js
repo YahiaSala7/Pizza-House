@@ -11,7 +11,6 @@ function Info(Props) {
     <p className='active'>{Props.p2}</p>
     <NavLink to="/Contacts">{Props.a}</NavLink>
     </div>
-
     </div>
   )
 }
