@@ -45,18 +45,13 @@ app.post("/register", (req, res) => {
     })
 })
 
-app.post("/addToCard", (req, res) => {
+app.post("/addToDB", (req, res) => {
     const { nameOfPizaa,price,stoke } = req.body
     Menu.findOne({ nameOfPizaa: nameOfPizaa }, (err, user) => {
         if (user) {
-            if (user.stoke < 1) {
-                res.send({ message: "no item" })
-            }
-            else {
                 res.send({
-                    massege: "item add"
+                    massege: "item is in data"
                 })
-            }
         } else {
             const product = new Menu({
                 nameOfPizaa,
