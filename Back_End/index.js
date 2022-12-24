@@ -9,11 +9,22 @@ const Menu =require('./Schema/MenuSchema')
 
 
 app.post("/login", (req, res) => {
-    
+    const { email, password } = req.body
+    Users.findOne({ email: email }, (err, user) => {
+        if (user) {
+            if (password === user.password) {
+                res.send({ message: "Login Successfull", user: user })
+            } else {
+                res.send({ message: "Password didn't match" })
+            }
+        } else {
+            res.send({ message: "User not registered" })
+        }
+    })
 })
 
 app.post("/register", (req, res) => {
-
+    
 })
 
 app.post("/addToCard", (req, res) => {
