@@ -29,7 +29,7 @@ app.post("/register", (req, res) => {
         if (user) {
             res.send({ message: "User already registerd" })
         } else {
-            const user = new User({
+            const user = new Users({
                 name,
                 email,
                 password
