@@ -1,4 +1,5 @@
 import './App.css';
+import React ,{ useState } from 'react';
 import HomePage from './Components/HomePage/HomePage';
 import Aboutus from './Components/Aboutus/Aboutus';
 import MenuPage from './Components/MenuPage/MenuPage';
@@ -10,6 +11,7 @@ import Contacts from './Components/Contacts/Contatct'
 
 
 function App() {
+  const [ user, setLoginUser] = useState({})
   return (
     <div className="App">
     <BrowserRouter>
@@ -19,10 +21,8 @@ function App() {
           <Route path='/Aboutus' element={<Aboutus />} />
           <Route path='/Menu' element={<MenuPage/>}/>
           <Route path='/Contacts' element={<Contacts/>}/>
-          <Route path='/AddtoCart' element={<Cart/>}/>``
-          <Route path='/Login' element={<Login />} />
+          <Route path='/Login' element={<Login   setLoginUser={setLoginUser}/>} />
           <Route path='/Register' element={<Register/>}/>
-          {/* <Route path='/Contacts' element={<ContactsPage/>}/> */}
           <Route path='/AddtoCart' element={<Cart/>}/>
         </Routes>
       </div>

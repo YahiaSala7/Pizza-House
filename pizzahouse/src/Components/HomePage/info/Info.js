@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import './info.css'
 import '../../general.css'
 function Info(Props) {
@@ -8,9 +9,8 @@ function Info(Props) {
     <h2>{Props.h2}</h2>
     <p>{Props.p1}</p>
     <p className='active'>{Props.p2}</p>
-    <a href="#">{Props.a}</a>
+    <NavLink to="/Contacts">{Props.a}</NavLink>
     </div>
-
     </div>
   )
 }
