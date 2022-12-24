@@ -3,10 +3,8 @@ const Schema = mongoose.Schema;
 
 // define the Schema (the structure of the Users)
 const UsersSchema = new Schema({
-  firstName: String,
-  lastName: String,
+  Name: String,
   email: String,
-  phone: String,
   password: String,
   money:{
     type:Number,
