@@ -45,13 +45,48 @@ app.post("/register", (req, res) => {
     })
 })
 
-app.post("/addToCard", (req, res) => {
-    
+app.post("/addToDB", (req, res) => {
+    const { nameOfPizaa,price,stoke } = req.body
+    Menu.findOne({ nameOfPizaa: nameOfPizaa }, (err, user) => {
+        if (user) {
+                res.send({
+                    massege: "item is in data"
+                })
+        } else {
+            const product = new Menu({
+                nameOfPizaa,
+                price,
+                stoke
+            })
+            product.save(err => {
+                if (err) {
+                    res.send(err)
+                } else {
+                    res.send({ massege: "add scusess" })
+                }
+            })
+        }
+    })
 })
 
 
 app.patch("/updateTheCard/:name", (req, res) => {
-    
+    const updatepost = {
+        nameOfPizaa: req.body.name,
+        stoke:  req.body.stoke
+    }
+    const {nameOfPizaa} = req.params
+    Menu.findOneAndUpdate({ nameOfPizaa: nameOfPizaa }, updatepost, (err, user) => {
+        if (err) res.send(err)
+        if (user) {
+            res.status(200);
+            res.send({ massege: "updated" });
+        }
+        else {
+            res.status(404);
+            res.send({ massege: "Not found" });
+        }
+    })
 })
 
 app.listen(9002, () => {
