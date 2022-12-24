@@ -1,7 +1,7 @@
 import React from 'react'
 import NavBar from './NavBar'
 import logo from '../../imgs/Logo/logo-198x66.png'
-import  './css/header.css'
+import './css/header.css'
 import '../../general.css'
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -12,18 +12,15 @@ function Header() {
       <div className="container">
         <div className='part-one'>
           <img src={logo} alt="Logo of page" /></div>
-          <NavBar />
-      <div className="lgoin"><a href="#">Log in</a></div>
-      <div className="register"><a href="#">Register</a></div>
-      <div className="cart">
+        <NavBar />
+        {/* <div className="lgoin"><a href="#">Log in</a></div>
+        <div className="register"><a href="#">Register</a></div> */}
+        <div className="cart">
           <FontAwesomeIcon icon={faCartShopping} className="icon"></FontAwesomeIcon>
           <NavLink to="/AddtoCart"></NavLink>
-          </div>
-<<<<<<< HEAD
-=======
-      <div className="lgoin"><NavLink to="/Login">Log in</NavLink></div>
-      <div className="register"><NavLink to="/Register">Register</NavLink></div>
->>>>>>> adf4d7d107fa3d6e68324c301552263d027ebb5a
+        </div>
+        <div className="lgoin"><NavLink to="/Login">Log in</NavLink></div>
+        <div className="register"><NavLink to="/Register">Register</NavLink></div>
       </div>
     </div>
   )
