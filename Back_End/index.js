@@ -46,7 +46,32 @@ app.post("/register", (req, res) => {
 })
 
 app.post("/addToCard", (req, res) => {
-    
+    const { nameOfPizaa,price,stoke } = req.body
+    Menu.findOne({ nameOfPizaa: nameOfPizaa }, (err, user) => {
+        if (user) {
+            if (user.stoke < 1) {
+                res.send({ message: "no item" })
+            }
+            else {
+                res.send({
+                    massege: "item add"
+                })
+            }
+        } else {
+            const product = new Menu({
+                nameOfPizaa,
+                price,
+                stoke
+            })
+            product.save(err => {
+                if (err) {
+                    res.send(err)
+                } else {
+                    res.send({ massege: "add scusess" })
+                }
+            })
+        }
+    })
 })
 
 
