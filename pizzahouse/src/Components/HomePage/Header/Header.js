@@ -16,13 +16,10 @@ function Header() {
         <div className="cart">
           <FontAwesomeIcon icon={faCartShopping} className="icon"></FontAwesomeIcon>
           <NavLink to="/AddtoCart"></NavLink>
-<<<<<<< HEAD
-          </div>
-=======
         </div>
         <div className="lgoin"><NavLink to="/Login">Log in</NavLink></div>
         <div className="register"><NavLink to="/Register">Register</NavLink></div>
->>>>>>> 83bf5b374eccd1643d543d1488b6ba07774257f9
+//
       </div>
     </div>
   )
