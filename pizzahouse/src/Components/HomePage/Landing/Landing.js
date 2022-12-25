@@ -53,15 +53,9 @@ const route = useNavigate()
       <div className="info">
       <h1 className='head1'>Perfect pizza </h1>
       <p className='parg1'>Experience the taste of a perfect pizza at PizzaHouse, one of the best restaurants</p>
-<<<<<<< HEAD
       <button className='view'>View Our Menu</button>
       <div className="icon-left i" id='left'  onClick={changeBackgroundLeft}>
       <FontAwesomeIcon icon={faArrowLeft} className="icon"></FontAwesomeIcon>
-=======
-      <button className='view'   onClick={() => route('Menu')}>View Our Menu</button>
-      <div className="icon-left i" id='left'>
-      <FontAwesomeIcon icon={faArrowLeft} className="icon" onClick={changeBackground}></FontAwesomeIcon>
->>>>>>> 83bf5b374eccd1643d543d1488b6ba07774257f9
       <img src={img1} alt="" />
       </div>
       <div className="icon-right i" id='right'  onClick={changeBackgroundRight}>

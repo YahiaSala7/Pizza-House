@@ -11,8 +11,7 @@ function Card(props) {
 </div>
 <div className="buttons">
     <a href="#">Add to cart</a>
-    <a href="#">remove from card </a>
-    {/* <a href="#">Go To Menu</a> */}
+    <a href="#">buy</a>
     
 </div>
     </div>
