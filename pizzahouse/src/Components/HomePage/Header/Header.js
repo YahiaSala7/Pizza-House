@@ -19,6 +19,7 @@ function Header() {
         </div>
         <div className="lgoin"><NavLink to="/Login">Log in</NavLink></div>
         <div className="register"><NavLink to="/Register">Register</NavLink></div>
+//
       </div>
     </div>
   )
