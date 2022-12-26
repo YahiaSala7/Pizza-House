@@ -8,7 +8,7 @@ import Land from './land/land';
  //import Leftparagraoh from './paragraph/leftparagraoh';
 import Ourteam from './paragraph/Ourteam';
 import Review from './review/Review'
-import yh from '../imgs/Our team photo/3al2.jpg'
+import yh from '../imgs/Our team photo/Yahia.jpg'
 import mz from '../imgs/Our team photo/mzax.jpg'
 import kot from '../imgs/Our team photo/koto.jpg'
 import bll from '../imgs/Our team photo/bll.jpg'

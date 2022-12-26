@@ -2,7 +2,7 @@
 .login {
     width: 400px;
     background: #fff;
-    border: 21px solid #1d5cb9;
+    border: 21px solid var(--first-color);
     box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
     border-radius: 8px;
     padding: 1rem;
@@ -22,8 +22,8 @@
 }
 
 .login > .button {
-    background: #1d5cb9;
-    border: 1px solid #1d5cb9;
+    background: var(--first-color);
+    border: 1px solid var(--first-color);
     color: #fff;
     font-size: 1.25rem;
     padding: 0.5rem;
@@ -38,7 +38,7 @@
 .reg{
     width: 400px;
     background: #fff;
-    border: 21px solid #1d5cb9;
+    border: 21px solid var(--first-color);
     box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
     border-radius: 8px;
     padding: 1rem;
@@ -58,8 +58,8 @@
 }
 
 .reg > .button {
-    background: #1877f2;
-    border: 1px solid #1877f2;
+    background: var(--first-color);
+    border: 1px solid var(--first-color);
     color: #fff;
     font-size: 1.25rem;
     padding: 0.5rem;

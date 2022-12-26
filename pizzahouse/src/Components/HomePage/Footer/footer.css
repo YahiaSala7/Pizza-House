@@ -77,9 +77,19 @@ cursor: pointer;
         margin: 10px 0;
     } 
     .inf:not(:last-child)::before{
-        top: 50%;
+        top: 45%;
         }
         .inf:not(:last-child)::after{
-        top: 75%;
+        top: 80%;
         }  
+}
+footer .container .two .socail .icon{
+font-size: 20px;
+margin:0 10px;
+cursor: pointer;
+color: var(--second-color);
+transition: var(--main-transition);
+}
+footer .container .two .socail .icon:hover{
+color: var(--third-color);
 }

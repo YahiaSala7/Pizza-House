@@ -45,10 +45,11 @@ function Footer() {
   <span>info@demolink.org</span>
 </div>
 <div className="socail">
-<FontAwesomeIcon icon={faFacebook} ></FontAwesomeIcon>
-<FontAwesomeIcon icon={faTwitter} ></FontAwesomeIcon>
-<FontAwesomeIcon icon={faInstagram} ></FontAwesomeIcon>
-<FontAwesomeIcon icon={faGooglePlusG} ></FontAwesomeIcon>
+  <a href="#"><FontAwesomeIcon icon={faFacebook} className="icon" ></FontAwesomeIcon></a>
+  <a href="#"><FontAwesomeIcon icon={faTwitter} className="icon" ></FontAwesomeIcon></a>
+  <a href="#"><FontAwesomeIcon icon={faInstagram} className="icon" ></FontAwesomeIcon></a>
+  <a href="#"><FontAwesomeIcon icon={faGooglePlusG} className="icon" ></FontAwesomeIcon></a>
+
 </div>
  </div>
       

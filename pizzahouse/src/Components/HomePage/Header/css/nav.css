@@ -64,10 +64,7 @@ z-index: 1000;
 color: var(--third-color);
 font-size: 30px;
 }
-/* .nav ul li  .lgoin ,
-.header .container  .register {
-    z-index: 1000;
-} */
+
 @media (max-width:991px) {
     .nav{
     justify-content:flex-start;
@@ -108,13 +105,18 @@ font-size: 30px;
     .nav ul .cart .icon{
     z-index: 100;
     }
+    .nav .list{
+        left: -10px;
+    }
 }
 @media (max-width:767px) {
     .nav ul {
         width: 280px;
     }
 }
-
+.nav .list{
+    left: -10px;
+}
 
 .nav .bars span {
 display: block;
@@ -140,9 +142,7 @@ top: 50%;
     top: 70%;
 
 }
-.nav .list{
-    left: 0;
-}
+
 
 
 /* First Rotate * *****************************/
