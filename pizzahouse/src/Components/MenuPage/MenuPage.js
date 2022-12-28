@@ -1,7 +1,7 @@
 import React from 'react'
 import Footer from '../HomePage/Footer/Footer'
 import Header from '../HomePage/Header/Header'
-import Land from '../Aboutus/land/land'
+// import Land from '../Aboutus/land/land'
 import MainTitle from '../MainTitle'
 import Pizza from './pizza'
 import Drinks from './Drinks'
@@ -15,7 +15,7 @@ function MenuPage() {
     <div>
       <Header/>
 
-      <Land title="Menu"/>
+      {/* <Land title="Menu"/> */}
 
       <MainTitle main="Pizza"/>
       <Pizza/>

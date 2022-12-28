@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { Component, useState } from "react"
 import "./aboutus.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -12,31 +11,9 @@ import kot from './imgs/Our team photo/koto.jpg'
 import bll from './imgs/Our team photo/bll.jpg'
 import mh from './imgs/Our team photo/moys.jpg'
 import Ourteam from './Ourteam';
+import Header from "../HomePage/Header/Header";
+import Footer from "../HomePage/Footer/Footer";
 import Opinion from "./Opinion";
-=======
-import React, { Component } from 'react';
-import Header from '../HomePage/Header/Header';
-import Land from './land/land';
- import Paragraph from './paragraph/paragraph';
-//import Paragraph from './paragraph/paragraph';
- import Leftparagraoh from './paragraph/leftparagraoh';
- //import Paragraph from './paragraph/paragraph';
- //import Leftparagraoh from './paragraph/leftparagraoh';
-import Ourteam from './paragraph/Ourteam';
-import Review from './review/Review'
-import yh from '../imgs/Our team photo/Yahia.jpg'
-import mz from '../imgs/Our team photo/mzax.jpg'
-import kot from '../imgs/Our team photo/koto.jpg'
-import bll from '../imgs/Our team photo/bll.jpg'
-import mh from '../imgs/Our team photo/moys.jpg'
-import './paragraph/Ourteam.css';
-import './review/reviwers.css'
-import Reviwers from './review/reviwers';
-import  kk from '../imgs/Gallery/gallery-2-631x587.jpg';
-import Footer from '../HomePage/Footer/Footer';
-import './Aboutsus.css'
-
->>>>>>> 3607a60524fcf898e87286deb3765730a53f9a48
 class Aboutus extends Component {
     constructor(){
         
@@ -46,7 +23,7 @@ class Aboutus extends Component {
 render() {
     return (
       <div>
-<<<<<<< HEAD
+        <Header  />
         <div className="containerr">
         <a href="#" id="ui-to-top" class="ui-to-top mdi mdi-arrow-up active">  <FontAwesomeIcon icon={faArrowUp} className='up'></FontAwesomeIcon></a>
           <div className="title">
@@ -108,28 +85,18 @@ render() {
       <h1>Our Team :</h1>
       </div>
         <div className='teammembers'>
-=======
-        <Header />
-        <Land title="About Us"/>   
-        <Paragraph />
-        <div className='ourteams'>
-        <h1>Our Team :</h1>
-        <div className='container'>
->>>>>>> 3607a60524fcf898e87286deb3765730a53f9a48
         <Ourteam  img={yh} name="Yehia Salah" rule="Front End"/>
         <Ourteam  img={mz} name="Moataz Essam" rule="Front End"/>
         <Ourteam  img={kot} name="Moahmmed Kotop" rule="Back End"/>
         <Ourteam  img={bll} name="Belal Abd Alnasser" rule="Back End"/>
         <Ourteam  img={mh} name="Moahmmed Youssef Ragab" rule="Back End"/>
-    
 </div>
-<div className="ourhistory">
+<div className="ourhistory" >
 <img alt="" src="https://livedemo00.template-help.com/wt_51689/images/our_history-1110x710.jpg"></img>
 <div className="text">
         <h1>OUR HISTORY</h1>
         <h3>Partnering with Organic Farms Located in California</h3>
         <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur.</p>
-        <div className="d0"></div>
     </div>
 </div>
 {/* <div className="opinios">
@@ -139,7 +106,9 @@ render() {
   < Opinion comment='Gluten, fluctus, et galatae. Germanus classiss ducunt ad brodium. Pol, a bene cedrium. Tabess unda in neuter avenio! Orexiss sunt adelphiss de rusticus parma.' name='moataz essam' position='normal customer' img={mz}/>
 </div>
 </div> */}
+       
         </div>
+ <Footer />
       </div>
     );
   }

@@ -1,4 +1,4 @@
-*{
+/* *{
     box-sizing: border-box;
     background-color: white;
 transition: step-start;
@@ -13,11 +13,11 @@ html {
     -ms-overflow-style: scrollbar;
     scroll-behavior: smooth;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
+} */
 .containerr{
-    padding-left: 0.5%;
-    padding-right: 0.5%;
-    margin: 0.5%;
+display: flex;
+flex-wrap: wrap;
+
 }
 .title{
     background-image: url('./imgs/Landing/pizza21.jpg');
@@ -94,11 +94,12 @@ height: 100%;
 
 }
 .paragraph .para{
-    max-width: 70%;
+    max-width: 60%;
     display: flex;
     flex-wrap: wrap;
     margin: 20px;
     position: relative;
+    margin-left: 10%;
 }
 .paragraph .para h1{
     margin-top: 95px;
@@ -125,11 +126,13 @@ height: 100%;
     transition-delay: 0.2ms;
     transition-duration: 0.2ms;
     transition: linear;
+    text-align: left;
+    margin-top: 20px;
 }
 .paragraph .para img{
     position: relative;
     width: 100%;
-    height: 600px;
+    height: 55vh;
     margin-top: 50px;
 }
 
@@ -153,6 +156,8 @@ height: 100%;
     top: 88px;
     flex-direction: column;
     margin-bottom: 100px;
+    text-align: left;
+    margin-right: 10%;
 }
 /* .paragraph .sidebar::before{
     content: "";
@@ -191,6 +196,7 @@ height: 100%;
     list-style: none;
     color:black;
     cursor: pointer;
+    border-bottom: 1px solid #e1e1e1;
   
 }
 .paragraph .sidebar ul li a{
@@ -235,7 +241,7 @@ height: 100%;
     z-index: 0;
     border-radius: 10px;
     top: 21px;
-    left: 49px;
+    left:0px;
     text-align: center;
 }
 
@@ -292,6 +298,10 @@ height: 100%;
     }
     .paragraph .sidebar{
         right: 0;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: center;
+    
     }
     .paragraph .para{
         position: relative;
@@ -304,17 +314,16 @@ height: 100%;
     }
    
     .paragraph .sidebar ul {
-        flex-direction: row;
-        max-width: 100%;
-        left: -10px;
-        flex-wrap: wrap;
+        margin-bottom: 0;
+        margin-left: -20px;
     }
     .paragraph .sidebar ul li{
-        flex-direction: row;
-        max-width: 100%;
-        margin: 10px;
-        left: -10px;
-        flex-wrap: wrap;
+        position: relative;
+        display: block;
+        padding: 10px 0;
+        border-bottom: 1px solid #e1e1e1;
+        text-transform: uppercase;
+        cursor: pointer;
 
     }
     .paragraph .para p{
@@ -416,12 +425,15 @@ height: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    bottom: -400px;
     width: 100%;
-    padding: 5px;
-    justify-content: space-between;
+    padding: 5%;
+    justify-content: space-evenly;
     height: 0px;
-    top: -509px;
+    top: -647px;
+    left: 0;
+
+    /* margin-left: 10%;
+    margin-right: 10%; */
 }
 .teamheadder h1{
     margin: 40px;
@@ -446,14 +458,18 @@ height: 100vh;
    }
 }
 .ourhistory{
-    margin-top: 300px;
+    margin-top: 20%;
     margin-bottom: 300px;
-    background-color: rgb(177, 7, 7);
+    background-color: rgb(69, 69, 69);
     display: flex;
     flex-direction: row-reverse;
     position: relative;
-    bottom: -1600px;
+    bottom: -1024px;
     height: 0;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    left: 0;
 }
 .ourhistory img{
     width: 50%;
@@ -462,11 +478,11 @@ height: 100vh;
     top: 79px;
 }
 .ourhistory .text{
-    background-color: rgb(177, 7, 7);
+    background-color:#f5f5f5;
     text-align: center;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 100%;
     position: relative;
     bottom: -79px;
     height: 85vh;
@@ -577,8 +593,7 @@ height: 100vh;
         flex-wrap: wrap;
         width: 100%;
         position: relative;
-        bottom: -100px;
-        bottom: -2300px;
+   top: 0;
     }
     .ourhistory .text::before {
 bottom: 9px;
@@ -588,7 +603,7 @@ bottom: 9px;
         text-align: center;
         position: relative;
         font-size: 40px;
-    top: 0;
+    top: -114px;
     left: 0;
 }
  
@@ -598,7 +613,7 @@ bottom: 9px;
         position: relative;
         font-size: 20px;
         text-align: center;
-    top: -10px;
+    top: -77px;
     left: 0;
 }
     .ourhistory .text p{
@@ -634,7 +649,9 @@ flex-direction: column;
     width: 100%;
     height: 65vh;
     position: relative;
-    top: 2298px;
+    top: 0px;
+    margin-top: 20%;
+
 }
 }
 .ui-to-top {
@@ -712,4 +729,9 @@ flex-direction: column;
     position: relative;
     top: -143px;
     margin-bottom: -66px;
+}
+.Footer{
+    position: relative;
+    margin-top: 50px;
+    bottom: 5000px;
 }
