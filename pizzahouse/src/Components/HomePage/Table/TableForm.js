@@ -4,7 +4,7 @@ import '../../general.css'
 function TableForm() {
 const [name,setName]=useState({name:"",email:""})
     return (
-    <div className='table'>
+    <div className='table' id='Table'>
 <div className="container">
 <form>
     <div className='row-one'>
@@ -26,12 +26,12 @@ const [name,setName]=useState({name:"",email:""})
     <div className='row-one'>
         <select name="Service">
                 <option value="Dine-in" selected>Dine-in</option>
-                <option value="Carry-Out">Carry-Out</option>
+                <option value="Order">Order</option>
                 <option value="Event Catering">Event Catering</option>
         </select>
     </div>
     <div className='message'>
-        <textarea placeholder='message'></textarea>
+        <textarea placeholder='Type Your What You Want,And If it Order Please Type Your Addresse'></textarea>
     </div>
     <div className='submit'>
         <input 

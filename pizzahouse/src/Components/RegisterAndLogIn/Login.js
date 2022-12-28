@@ -32,10 +32,10 @@ function Login ({setLoginUser}){
     }
 
     return (
-
-<>
+        <div className='log-page'>
 <Header/>
-
+<div className="register">
+<div className="container">
     <div className="login">
             <h1>Login</h1>
             <input type="text" name="email" value={user.email} onChange={handleChange} placeholder="Enter your Email"></input>
@@ -44,10 +44,10 @@ function Login ({setLoginUser}){
             <div>or</div>
             <div className="button" onClick={() => route('/Register')}>Register</div>
         </div>
-
+        </div>
+        </div>
         <Footer/>
-
-</>
+        </div>
     )
 }
 
