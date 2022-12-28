@@ -1,7 +1,10 @@
 import React , {useState} from 'react'
 import { useNavigate } from 'react-router-dom'
 import './logandregister.css'
+import '../general.css'
 import axios from 'axios'
+import Header from '../HomePage/Header/Header'
+import Footer from '../HomePage/Footer/Footer'
 
 function Login ({setLoginUser}){
     const route = useNavigate()
@@ -29,8 +32,11 @@ function Login ({setLoginUser}){
     }
 
     return (
-    <div>
-        <div className="login">
+
+<>
+<Header/>
+
+    <div className="login">
             <h1>Login</h1>
             <input type="text" name="email" value={user.email} onChange={handleChange} placeholder="Enter your Email"></input>
             <input type="password" name="password" value={user.password} onChange={handleChange} placeholder="Enter your Password" ></input>
@@ -38,7 +44,10 @@ function Login ({setLoginUser}){
             <div>or</div>
             <div className="button" onClick={() => route('/Register')}>Register</div>
         </div>
-    </div>
+
+        <Footer/>
+
+</>
     )
 }
 

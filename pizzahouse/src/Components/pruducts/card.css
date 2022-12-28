@@ -112,3 +112,36 @@ height: 150%;
 .card-product:hover img{
 z-index: -1;
 } 
+@media (max-width:991px) {
+    .card-product:before{
+    width: 0;
+    height: 0;
+    }
+    
+    .card-product:hover::before{
+        width: 0;
+        height: 0;
+    } 
+    .card-product:hover img{
+    z-index: 10;
+    } 
+    .card-product .buttons a{
+        visibility: visible;
+        }
+        
+        .card-product .buttons a:first-child{
+        transform: translateX(0);
+        }
+        .card-product .buttons a:last-child{
+        transform: translateX(0);
+        }
+        .card-product .buttons{
+        position: relative;
+        top: 0;
+        }
+        .card-product:hover .buttons a:first-child,
+        .card-product:hover .buttons a:last-child{
+        transform: translateX(0);
+        visibility: visible;
+        }
+}

@@ -8,8 +8,8 @@ import Info from './info/Info'
 import CardPage from '../pruducts/CardPage'
 import TableForm from './Table/TableForm'
 import Advantages from './advantages/Advantages'
-import Gallery from './Gallery/Gallery'
 import ScrollUp from '../ScrollUp/ScrollUp'
+import Video from './VideoSection/Video'
 
 function homePage(props) {
   return (
@@ -29,9 +29,12 @@ function homePage(props) {
         <Info  p2="Taste some of the best PizzaHouse salads!" a="Contact Us" h2="-30% on all salads & drinks" cn="contact services"/>
         {/* <MainTitle main="What people say "/> */}
         {/* <Gallery/>   */}
+        <MainTitle main="Video"/>
+        <Video/>
+
         <MainTitle main="Book Your Table"/>
         <TableForm/>
-
+        
         <Advantages/>
         <ScrollUp/>
         <Footer/>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import './logandregister.css'
+import '../general.css'
 import axios from 'axios'
 
 function Register() {
@@ -37,7 +38,9 @@ function Register() {
   }
 
   return (
-    <div className="reg">
+<>
+<div className="container">
+<div className="reg">
       <h1>Register</h1>
       <input type="text" name="name" value={user.name} placeholder="Your Name" onChange={handleChange}></input>
       <input type="text" name="email" value={user.email} placeholder="Your Email" onChange={handleChange}></input>
@@ -47,6 +50,9 @@ function Register() {
       <div>or</div>
       <div className="button" onClick={() => route("/Login")}>Login</div>
     </div>
+</div>
+
+</>
   )
 }
 

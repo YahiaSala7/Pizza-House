@@ -1,20 +1,28 @@
-import React from 'react'
+import {React,useState} from 'react'
 import './css/nav.css'
 import '../../general.css'
 import { NavLink } from 'react-router-dom'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
 function NavBar() {
-
+const [rotate,setRotate]=useState(false);
+const rotateSideBar =()=>setRotate(!rotate);
   return (
     <div className='nav'>
-        <ul>
-            <li><NavLink exact to="/">Home</NavLink></li>
+        <ul className={rotate ? 'list':''}>
+            <li><NavLink exact to="/">Home</NavLink ></li>
             <li><NavLink to="/Aboutus">About us</NavLink></li>
             <li><NavLink to="/Menu">Menu</NavLink></li>
             <li><NavLink to="/Contacts">Contacts</NavLink></li>
+            <li>
+            <div className="cart">
+            <NavLink to="/AddtoCart"><FontAwesomeIcon icon={faCartShopping} className="icon"></FontAwesomeIcon></NavLink>
+            </div>
+            </li>
+            <li> <NavLink to="/Login">Log in</NavLink> </li>
+            <li><NavLink to="/Register">Register</NavLink></li>
         </ul>
-      <div className="bars" id='bars-button' >
+      <div className={rotate ? 'bars first-rotate':'bars second-rotate'} id='bars-button' onClick={rotateSideBar}>
         <span className='line-one' id=''></span>
         <span className='line-two'></span>
         <span className='line-three'></span>
@@ -22,5 +30,6 @@ function NavBar() {
     </div>
   )
 }
+// className={sidebar ? 'first-roate': 'second-rotate'}
 
 export default NavBar
