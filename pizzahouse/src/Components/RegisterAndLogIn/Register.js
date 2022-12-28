@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom'
 import './logandregister.css'
 import '../general.css'
 import axios from 'axios'
+import Header from '../HomePage/Header/Header'
+import Footer from '../HomePage/Footer/Footer'
 
 function Register() {
   const route = useNavigate()
@@ -38,7 +40,9 @@ function Register() {
   }
 
   return (
-<>
+<div className='log-page'>
+<Header/>
+<div className="register">
 <div className="container">
 <div className="reg">
       <h1>Register</h1>
@@ -51,8 +55,9 @@ function Register() {
       <div className="button" onClick={() => route("/Login")}>Login</div>
     </div>
 </div>
-
-</>
+</div>
+<Footer/>
+</div>
   )
 }
 
