@@ -1,6 +1,6 @@
 const mongoose =require('mongoose')
 
-mongoose.connect("mongodb://0.0.0.0:27017/piazza", {
+mongoose.connect("mongodb+srv://mohamed:mohamedabdallah1@cluster0.9jolidg.mongodb.net/pizza?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }, () => {
