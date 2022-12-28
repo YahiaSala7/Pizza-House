@@ -5,6 +5,9 @@ app.use(express.json())
 app.use(express.urlencoded())
 app.use(cors())
 const Users =require('./Schema/UserSchema')
+const Burger =require('./Schema/BurgerSchema')
+const Drink =require('./Schema/DrinkSchema')
+const Pizza =require('./Schema/PizzaSchema')
 const Desserts =require('./Schema/DessertsSchema')
 const Seafood =require('./Schema/SeafoodSchema')
 const Salads =require('./Schema/SaladsSchema')
@@ -90,6 +93,18 @@ app.post("/register", (req, res) => {
 //         }
 //     })
 // })
+
+app.get("/AllBurger", (req, res,next) => {
+
+    Burger.find({}, (err, Users) =>{
+        if (err)
+            return next(err);
+        if (Users) {
+            console.log("Users count : " + Users.length);
+            res.json({users:Users});
+        }
+    });
+});
 
 app.listen(9002, () => {
     console.log("BE started at port 9002")
