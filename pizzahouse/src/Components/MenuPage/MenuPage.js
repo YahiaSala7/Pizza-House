@@ -9,6 +9,7 @@ import SeaFood from './SeaFood'
 import Salads from './Salads'
 import Deserts from './Desserts'
 import Burgers from './Burgers'
+import ScrollUp from '../ScrollUp/ScrollUp'
 function MenuPage() {
   return (
     <div>
@@ -35,6 +36,8 @@ function MenuPage() {
       <Deserts/>
 
       <MainTitle/>
+      
+      <ScrollUp/>
 
       <Footer/>
     </div>

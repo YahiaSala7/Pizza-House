@@ -1,0 +1,25 @@
+.video{
+background-color:#f5f5f5 ;
+overflow: hidden;
+display: flex;
+justify-content: center;
+}
+.video .container{
+    position: relative;
+    padding:20px ;
+    background-color: #000000f0;
+}
+.video .container  video{
+max-width: 100%;
+margin: auto;
+}
+.video .container::after{
+content: "";
+position: absolute;
+width: 30%;
+height: 20px;
+left: 50%;
+top: 0;
+transform: translate3d(-50%,0,0);
+background-color: #f5f5f5;
+}

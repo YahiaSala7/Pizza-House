@@ -15,6 +15,8 @@ gap: 5px;
     padding: 60px 20px 30px;
     background-color: #fff;
     width: 240px;
+    transition: var(--main-transition);
+    overflow: hidden;
 }
 @media (max-width:991px) {
     .card-product{
@@ -82,4 +84,64 @@ overflow: hidden;
 transform: translateX(0);
 visibility: visible;
 }
+.card-product .buttons a:hover{
+color: white;
+background-color: var(--third-color);
+}
+.card-product:before{
+content: "";
+position: absolute;
+border-radius: 50%;
+width: 50%;
+height: 50%;
+left: 50%;
+background-color: transparent;
+transform: translateX(-50%);
+visibility: hidden;
+transition: .2s linear;
+}
 
+.card-product:hover::before{
+visibility: visible;
+background-color: rgb(239 239 239 / 92%);
+width: 150%;
+height: 150%;
+} 
+
+
+.card-product:hover img{
+z-index: -1;
+} 
+@media (max-width:991px) {
+    .card-product:before{
+    width: 0;
+    height: 0;
+    }
+    
+    .card-product:hover::before{
+        width: 0;
+        height: 0;
+    } 
+    .card-product:hover img{
+    z-index: 10;
+    } 
+    .card-product .buttons a{
+        visibility: visible;
+        }
+        
+        .card-product .buttons a:first-child{
+        transform: translateX(0);
+        }
+        .card-product .buttons a:last-child{
+        transform: translateX(0);
+        }
+        .card-product .buttons{
+        position: relative;
+        top: 0;
+        }
+        .card-product:hover .buttons a:first-child,
+        .card-product:hover .buttons a:last-child{
+        transform: translateX(0);
+        visibility: visible;
+        }
+}
