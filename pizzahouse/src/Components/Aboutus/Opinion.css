@@ -1,0 +1,29 @@
+.peopop{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+}
+.peopop p{
+    color: #777;
+    text-align: left;
+    line-height: 1.8;
+    margin-top: 0px;
+    font-weight: 200;
+    font-size: 25px;
+    margin-bottom: 0px;
+}
+.peopop h3{
+    color: black;
+    text-align: left;
+    font-size: 31px;
+    font-weight: 300;
+    margin-bottom: -12px;
+}
+.peopop h4{
+    color: #eea660;
+    text-align: left;
+    font-size: 17;
+    font-weight: 200;
+}
