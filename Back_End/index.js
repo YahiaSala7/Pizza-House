@@ -1,16 +1,16 @@
 const express = require('express')
-const cors =require('cors')
+const cors = require('cors')
 const app = express()
 app.use(express.json())
 app.use(express.urlencoded())
 app.use(cors())
-const Users =require('./Schema/UserSchema')
-const Burger =require('./Schema/BurgerSchema')
-const Drink =require('./Schema/DrinkSchema')
-const Pizza =require('./Schema/PizzaSchema')
-const Desserts =require('./Schema/DessertsSchema')
-const Seafood =require('./Schema/SeafoodSchema')
-const Salads =require('./Schema/SaladsSchema')
+const Users = require('./Schema/UserSchema')
+const Burger = require('./Schema/BurgerSchema')
+const Drink = require('./Schema/DrinkSchema')
+const Pizza = require('./Schema/PizzaSchema')
+const Desserts = require('./Schema/DessertsSchema')
+const Seafood = require('./Schema/SeafoodSchema')
+const Salads = require('./Schema/SaladsSchema')
 
 
 app.post("/login", (req, res) => {
@@ -50,6 +50,91 @@ app.post("/register", (req, res) => {
     })
 })
 
+app.patch("/updateUserItem/:name", (req, res) => {
+    const updatepost = {
+        name: req.body.name,
+        email: req.body.email,
+        password: req.body.password,
+        money: req.body.money,
+        Orderitem: req.body.Orderitem
+    }
+    const { name } = req.params
+    Users.findOneAndUpdate({ name: name }, updatepost, (err, user) => {
+        if (err) res.send(err)
+        if (user) {
+            res.status(200);
+            res.send({ massege: "updated" });
+        } else {
+            res.status(404);
+            res.send({ massege: "Not found" });
+        }
+    })
+})
+
+app.patch("/updateItem/:nameOfFood", (req, res) => {
+    const updatepost = {
+        nameOfFood: req.body.name,
+        stoke: req.body.stoke
+    }
+    const { nameOfFood } = req.params
+    Burger.findOneAndUpdate({ nameOfFood: nameOfFood }, updatepost, (err, user) => {
+        if (err) res.send(err)
+        if (user) {
+            res.status(200);
+            res.send({ massege: "updated" });
+        }
+        else {
+            Drink.findOneAndUpdate({ nameOfFood: nameOfFood }, updatepost, (err, user) => {
+                if (err) res.send(err)
+                if (user) {
+                    res.status(200);
+                    res.send({ massege: "updated" });
+                }
+                else {
+                    Desserts.findOneAndUpdate({ nameOfFood: nameOfFood }, updatepost, (err, user) => {
+                        if (err) res.send(err)
+                        if (user) {
+                            res.status(200);
+                            res.send({ massege: "updated" });
+                        }
+                        else {
+                            Pizza.findOneAndUpdate({ nameOfFood: nameOfFood }, updatepost, (err, user) => {
+                                if (err) res.send(err)
+                                if (user) {
+                                    res.status(200);
+                                    res.send({ massege: "updated" });
+                                }
+                                else {
+                                    Seafood.findOneAndUpdate({ nameOfFood: nameOfFood }, updatepost, (err, user) => {
+                                        if (err) res.send(err)
+                                        if (user) {
+                                            res.status(200);
+                                            res.send({ massege: "updated" });
+                                        }
+                                        else {
+                                            Salads.findOneAndUpdate({ nameOfFood: nameOfFood }, updatepost, (err, user) => {
+                                                if (err) res.send(err)
+                                                if (user) {
+                                                    res.status(200);
+                                                    res.send({ massege: "updated" });
+                                                }
+                                                else {
+                                                    res.status(404);
+                                                    res.send({ massege: "Not found" });
+                                                }
+                                            })
+                                        }
+                                    })
+                                }
+                            })
+                        }
+                    })
+                }
+            })
+        }
+    })
+})
+
 // app.post("/addToDB", (req, res) => {
 //     const { nameOfFood,price,stoke } = req.body
 //     Menu.findOne({ nameOfFood: nameOfFood }, (err, user) => {
@@ -76,11 +161,11 @@ app.post("/register", (req, res) => {
 
 
 // app.patch("/updateTheCard/:nameOfFood", (req, res) => {
-//     const updatepost = {
-//         nameOfFood: req.body.name,
-//         stoke:  req.body.stoke
-//     }
-//     const {nameOfFood} = req.params
+// const updatepost = {
+//     nameOfFood: req.body.name,
+//     stoke:  req.body.stoke
+// }
+// const {nameOfFood} = req.params
 //     Menu.findOneAndUpdate({ nameOfFood: nameOfFood }, updatepost, (err, user) => {
 //         if (err) res.send(err)
 //         if (user) {
@@ -94,82 +179,77 @@ app.post("/register", (req, res) => {
 //     })
 // })
 
-app.get("/AllBurger", (req, res,next) => {
+app.get("/AllBurger", (req, res, next) => {
 
-    Burger.find({}, (err, Users) =>{
+    Burger.find({}, (err, Users) => {
         if (err)
             return next(err);
         if (Users) {
-            console.log("Users count : " + Users.length);
-            res.json({users:Users});
+
+            res.json({ users: Users });
         }
     });
 });
 
 
-app.get("/AllDrink", (req, res,next) => {
+app.get("/AllDrink", (req, res, next) => {
 
-    Drink.find({}, (err, Users) =>{
+    Drink.find({}, (err, Users) => {
         if (err)
             return next(err);
         if (Users) {
-            console.log("Users count : " + Users.length);
-            res.json({users:Users});
+
+            res.json({ users: Users });
         }
     });
 });
 
 
-app.get("/Allpizza", (req, res,next) => {
+app.get("/Allpizza", (req, res, next) => {
 
-    Pizza.find({}, (err, Users) =>{
+    Pizza.find({}, (err, Users) => {
         if (err)
             return next(err);
         if (Users) {
-            console.log("Users count : " + Users.length);
-            res.json({users:Users});
+            res.json({ users: Users });
         }
     });
 });
 
 
 
-app.get("/AllSalads", (req, res,next) => {
+app.get("/AllSalads", (req, res, next) => {
 
-    Salads.find({}, (err, Users) =>{
+    Salads.find({}, (err, Users) => {
         if (err)
             return next(err);
         if (Users) {
-            console.log("Users count : " + Users.length);
-            res.json({users:Users});
+            res.json({ users: Users });
         }
     });
 });
 
-app.get("/AllSeafood", (req, res,next) => {
+app.get("/AllSeafood", (req, res, next) => {
 
-    Seafood.find({}, (err, Users) =>{
+    Seafood.find({}, (err, Users) => {
         if (err)
             return next(err);
         if (Users) {
-            console.log("Users count : " + Users.length);
-            res.json({users:Users});
+            res.json({ users: Users });
         }
     });
 });
 
-app.get("/AllDesserts", (req, res,next) => {
+app.get("/AllDesserts", (req, res, next) => {
 
-    Desserts.find({}, (err, Users) =>{
+    Desserts.find({}, (err, Users) => {
         if (err)
             return next(err);
         if (Users) {
-            console.log("Users count : " + Users.length);
-            res.json({users:Users});
+            res.json({ users: Users });
         }
     });
 });
-
 
 app.listen(9002, () => {
     console.log("BE started at port 9002")
