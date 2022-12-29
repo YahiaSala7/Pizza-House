@@ -1,53 +1,156 @@
-.paragraph{
-   padding:50px  0;
+/* *{
+    box-sizing: border-box;
+    background-color: white;
+transition: step-start;
+transition-property: all;
+transition: ease-in-out;
 }
-.paragraph .container{
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -ms-overflow-style: scrollbar;
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+} */
+.containerr{
 display: flex;
-justify-content: space-between;
-gap: 20px;
-max-width: 100%;
+flex-wrap: wrap;
+
+}
+.title{
+    background-image: url('../imgs/Landing/pizza21.jpg');
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    background-size: cover;
+    justify-content: center;
+align-items: center;
+position: relative;
+}
+.title::before{
+    content:"";
+    position: absolute;
+    width: 100%;
+height: 100%;
+    background-color: rgba(0, 0, 0, 0.656);
+    top: 0;
+    left: 0;
+}
+.title h1{
+    text-align: center;
+    z-index: 5;
+    background: none;
+    color: wheat;
+    font-size: 90px;
+}
+.title h1::before{
+    content: "";
+    position: absolute;
+    width: 33%;
+    height: 3px;
+    background-color: white;
+    bottom: 91px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+@media(max-width :700px){
+    .title h1{
+    font-size: 40px;
+    }
+    .paragraph{
+            flex-direction: column;
+    }
+    .paragraph .para{
+        flex-direction: row;
+    }
+}
+@media(max-width :1000px){
+    .title h1{
+        font-size: 65px;
+        }
+        .paragraph{
+            flex-direction: column;
+        }
+        .paragraph .para{
+            flex-direction: row;
+        }
+     
+}
+/* fisih land  */
+
+/* now we start the paragraph */
+.paragraph{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+
 }
 .paragraph .para{
-<<<<<<< HEAD
     max-width: 50%;
     display: flex;
     flex-wrap: wrap;
     margin: 20px;
     position: relative;
     margin-left: 10%;
-=======
-display: flex;
-flex-direction: column;
-max-width: 70%;
->>>>>>> 0d0fe17b3a67ccf27a7f287a9329ad0007150485
 }
-.paragraph .para .h2{
+.paragraph .para h1{
+    margin-top: 95px;
     color:black;
-    font-size: 25px;
+    text-align: left;
+    left: 0;
+    top: 0;
+    font-size: 40px;
+    font-weight: 400;
+    transition: 0.3;
+    transition-delay: 0.2ms;
+    transition-duration: 0.2ms;
+    transition: linear;
+    width: 70%;
+
 }
 .paragraph .para p{
-    font-size: 18px;
+    font-size: 20px;
+    left: -15;
     margin: 2px;
     color: #777;
-    line-height: var(--main-line-height);
+    line-height: 1.6;
+    transition: 0.3;
+    transition-delay: 0.2ms;
+    transition-duration: 0.2ms;
+    transition: linear;
+    text-align: left;
+    margin-top: 20px;
 }
 .paragraph .para img{
-<<<<<<< HEAD
     position: relative;
     width: 120%;
     height: 55vh;
     margin-top: 50px;
-=======
-    max-width: 100%;
->>>>>>> 0d0fe17b3a67ccf27a7f287a9329ad0007150485
 }
 
+
 .paragraph .p1{
-    font-size: 18px;
+    font-size: 20px;
+    left: 0;
+    color: #777;
+    line-height: 1.6;
+    transition: 0.3;
+    transition-delay: 0.2ms;
+    transition-duration: 0.2ms;
+    transition: linear;
 }
+
+
 .paragraph .sidebar{
     display: flex;
-<<<<<<< HEAD
     position: relative;
     right: 0;
     top: 88px;
@@ -78,48 +181,37 @@ max-width: 70%;
     position: relative;
     width: 100%;
     margin-bottom: 20px;
-=======
-    flex-direction: column;
-    flex-basis: 30%;
-}
-@media (max-width:991px) {
-    .paragraph .container{
-    flex-direction: column;
-    }
-.paragraph .para{
-    max-width: 100%;
-    align-items: center;
-    }
-.paragraph .para p{
-font-size: 16px;
-}
-.paragraph .para img{
-display: none;
-}
-}
-.sidebar h5{
-    font-size: 25px;
-}
->>>>>>> 0d0fe17b3a67ccf27a7f287a9329ad0007150485
 
+}
+.sidebar .list{
+    display: flex;
+    margin-right: 50px;
+    right: 150px;
+    bottom: -400px;
+    font-size: 25px;
+    line-height: 3;
+    list-style: none;
+    font-style: none;
+    color:#777;
+}
 .paragraph .sidebar ul{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 .paragraph .sidebar ul li{
+    list-style: none;
+    color:black;
     cursor: pointer;
     border-bottom: 1px solid #e1e1e1;
-    transition: var(--main-transition);
-    padding: 20px 0;
+  
 }
 .paragraph .sidebar ul li a{
+    list-style: none;
+    color:black;
     cursor: pointer;
-    padding: 0 20px;
 }
-.paragraph .sidebar ul li:hover{
-    background-color:  var(--first-color);
-    color: white;
+.paragraph .sidebar ul li a:hover{
+    color:  #6046b6;;
 }
 
 .paragraph .sidebar a ::before{
@@ -131,21 +223,34 @@ display: none;
     
 }
 .paragraph .button{
-    font-size: 18px;
-    padding: 20px 60px;
-    background-color: var(--second-color);
-    width: fit-content;
-    margin-top: 20px;
-    cursor: pointer;
-    border: none;
-    transition: var(--main-transition);
+    margin-right: 40px;
+    right: 120px;
+    bottom: -530px;
+    font-size: 25px;
+    padding: 20px;
+    background-color: yellow;
+    border-style: none;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+
 }
-.paragraph .button:hover{
-background-color: var(--third-color);
-color: white;
+.glow-on-hover {
+    width: 70%;
+    height: 88px;
+    border: none;
+    outline: none;
+    color:black;
+    background: yellow;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    top: 21px;
+    left:0px;
+    text-align: center;
 }
 
-<<<<<<< HEAD
 .glow-on-hover:before {
     content: '';
     background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
@@ -272,36 +377,10 @@ color: white;
     flex-wrap: wrap;
     justify-content: space-between;
  
-=======
-.ourfeatures{
-    background-color: rgba(119, 119, 119, 0.13);
-    padding: 50px 0;
-}
-.ourfeatures .container{
-display: flex;
-gap: 10px;
-max-width: 100%;
-}
-@media (max-width:991px) {
-    .ourfeatures .container{
-    flex-direction: column;
-    align-items: center;
-    }
-    .ourfeatures .container .box{
-    align-items: center;
-    }
-    .ourfeatures .container .box p{
-        text-align: center;
-
-    }
-    .ourfeatures .container .box .icons{
-       margin: 0 0 10px 0;
-    }
->>>>>>> 0d0fe17b3a67ccf27a7f287a9329ad0007150485
 }
 .ourfeatures .box{
+    background:none;
     display: flex;
-<<<<<<< HEAD
     flex-wrap: wrap;
     margin-right: 40px;
     margin-left: 80px;
@@ -309,43 +388,33 @@ max-width: 100%;
     text-align: center;
     margin-bottom: 20px ;
 
-=======
-    flex-direction: column;
-    text-align: center;
->>>>>>> 0d0fe17b3a67ccf27a7f287a9329ad0007150485
 }
 .ourfeatures .box h3{
-    font-size: 25px;
+    background:none;
+    font-size: 35px;
     font-weight: 400;
-<<<<<<< HEAD
     margin: 5px;
-=======
->>>>>>> 0d0fe17b3a67ccf27a7f287a9329ad0007150485
     text-align: left;
 }
 .ourfeatures .box p{
+    background:none;
     font-size: 20px;
     color: #777;
     line-height: 1.8;
     margin-bottom: 30px;
+    width: 50%;   
     text-align: left;
 }
 .ourfeatures .icons{
-<<<<<<< HEAD
     background: none;
     display: flex;
     text-align: left;
     height: 81px;
     width: 86px;
-=======
-    height: 50px;
-    width: 50px;
->>>>>>> 0d0fe17b3a67ccf27a7f287a9329ad0007150485
     color: #151515;
-    background: var(--second-color);
+    background: yellow;
     border-radius: 50%;
     box-shadow: 12px 12px 20px 0 rgb(0 0 0 / 15%);
-<<<<<<< HEAD
     margin-right: 0;
     top: 30px;
     left: -87px;
@@ -359,15 +428,9 @@ max-width: 100%;
         left: 0;
     position: relative;
     }
-=======
-    margin-left: 50px;
-    margin-bottom: 20px;
->>>>>>> 0d0fe17b3a67ccf27a7f287a9329ad0007150485
 }
-
 /* finish the ourfearures icons */
 /* start ourteam */
-<<<<<<< HEAD
 .teamhedder{
     position: relative;
     display: flex;
@@ -392,6 +455,7 @@ max-width: 100%;
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin-top: 33px;
 }
 .teamheadder h1{
     display: flex;
@@ -418,13 +482,11 @@ height: 100vh;
    }
    .ourteams{
     margin-left: 60px;
-    margin-top: 133px;
-}
-
+   }
 }
 .ourhistory{
     margin-top: 10%;
-    margin-bottom:  702px;
+    margin-bottom: 53%;
     background-color: rgb(69, 69, 69);
     display: flex;
     flex-direction: row-reverse;
@@ -528,7 +590,7 @@ flex-direction: column;
     width: 100%;
     height: 65vh;
     top: 0px;
-    margin-top: 54%;
+    margin-top: 40%;
 
 }
 }
@@ -572,11 +634,3 @@ flex-direction: column;
     bottom: 40px;
 }
 }
-.footer{
-    position: relative;
-  bottom: -1565px;
-}
-
-=======
-/*  */
->>>>>>> 0d0fe17b3a67ccf27a7f287a9329ad0007150485
