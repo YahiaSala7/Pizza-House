@@ -18,14 +18,7 @@ class Aboutus extends Component {
     constructor(){
         
         super();
-<<<<<<< HEAD
-  this.state={title:'A FEW WORDS ABOUT US',para:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit ametconsectetur.'}
-}
-name={
-  name:this.props.setLoginUser
-=======
    this.state={title:'A FEW WORDS ABOUT US',para:"The key to progress is much similar to the key to improving a pizza – the more you put into it, the more you receive in return. Our pizza family is as eager for flawlessness today as we were the point at which we originally opened our entryways over 40 years back. Also, we’re headed to be the best at making creative new items and formulas. Quality is at our center. It’s the establishment we begun with, from the main ‘Organization Name’ pizza that was made in a sweeper storage room in Manhattan, IN, to now in excess of 5,000 areas in 45 nations and regions around the globe. We don’t utilize shabby and increasingly prepared fixings. Regardless of whether it’s our mark sauce, fixings, our unique new mixture, or even the case itself, we put resources into our fixings to guarantee that we generally give you the best quality pizza. For you, it’s not only a superior pizza. It’s a family assembling, important birthday, work festivity or basically an incredible supper. It’s our objective to ensure you generally have the best elements for each event."}
->>>>>>> b792b9f40c97ad8b8d4208ea9e12286db4df6522
 }
 render() {
     return (

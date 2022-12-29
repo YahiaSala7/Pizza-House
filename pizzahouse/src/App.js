@@ -22,7 +22,8 @@ function App() {
         <Route path='/' element={<HomePage setLoginUser={setLoginUser}/>} />
             <Route path='/Aboutus' element={<Aboutus/>} />
             <Route path='/Menu' element={
-              user && user._id? <MenuPage setLoginUser={setLoginUser}/>  : <Login setLoginUser={setLoginUser} /> 
+              //user && user._id? <MenuPage setLoginUser={setLoginUser}/>  : <Login setLoginUser={setLoginUser} /> 
+              <MenuPage/>
             }/>
             <Route path='/Contacts' element={<Contacts />} />
             <Route path='/Login' element={  user && user._id? <MenuPage setLoginUser={setLoginUser}/>:<Login setLoginUser={setLoginUser} />} />
