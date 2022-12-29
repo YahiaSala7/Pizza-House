@@ -12,6 +12,7 @@ import LandSection from "../HomePage/LandSection/LandSection";
 import MainTitle from "../MainTitle";
 import pm from './imgs/about-1-835x418.jpg'
 import OurTeamSction from "./OurTeamSction";
+import ScrollUp from "../ScrollUp/ScrollUp";
 // import Opinion from "./Opinion";
 class Aboutus extends Component {
     constructor(){
@@ -84,6 +85,7 @@ render() {
           <MainTitle main="Our Team "/>  
         <OurTeamSction/>
  <Footer />
+ <ScrollUp/>
       </div>
     );
   }
