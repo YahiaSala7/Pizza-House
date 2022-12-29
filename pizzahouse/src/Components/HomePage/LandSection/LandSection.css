@@ -1,0 +1,24 @@
+.landing-section{
+    background-color: var(--main-color);
+    background-image: url(../../imgs/Landing/pizza22.jpg );
+    background-size: cover;
+    height: 40vh;    
+    position: relative;
+}
+.landing-section::before{
+content: "";
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+background-color: rgba(0, 0, 0, 0.267);
+}
+.landing-section h1{
+color: white;
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate3d(-50%,-50%,0 );
+border-bottom:4px  solid white;
+}

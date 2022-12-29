@@ -1,4 +1,30 @@
+.allteam .container{
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill , minmax(250px,1fr));
+  gap: 5px;
+}
+.ourteam {
+padding: 20px;
+box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
+position: relative;
+overflow: hidden;
+transition: var(--main-transiton);
+text-align: center;
+}
+.ourteam  > img {
+width: 250px;
+height: 350px;
+}
+.ourteam  .inf{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.ourteam  .inf h4{
+color: var(--main-title-color);
 
+<<<<<<< HEAD
   .ourteams h1{
     color: rgb(0 0 0);
       font-size: 100px;
@@ -113,34 +139,24 @@
   position: relative;
   top: 0;
   left: -77px;
+=======
+>>>>>>> 0d0fe17b3a67ccf27a7f287a9329ad0007150485
 }
 
-.load-wrapp p {
-  padding: 0 0 20px;
+.ourteam  .inf {
+  position: absolute;
+  padding: 20px;
+  left: 0;
+  background-color: white;
+  width: 100%;
+  transition: 0.5s;
+  bottom: -100%;
 }
-.load-wrapp:last-child {
-  margin-right: 0;
-  background: none;
+.ourteam:hover .inf{
+bottom: 0;
 }
-.bar {
-  float: left;
-  width: 35px;
-  height: 10px;
-  border-radius: 10px;
-  background-color: yellow;
-}
-.load-10 .bar {
-  animation: loadingJ 2s cubic-bezier(0.17, 0.37, 0.43, 0.67) infinite;
-}
-@keyframes loadingJ {
-  0%,
-  100% {
-    transform: translate(0, 0);
-  }
-
-  50% {
-    transform: translate(130%, 0);
-    background-color: #f5634a;
-    width: 100%;
+@media (max-width:991px) {
+  .ourteam  .inf {
+    bottom: 0;
   }
 }

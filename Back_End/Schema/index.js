@@ -134,41 +134,6 @@ app.get("/Allpizza", (req, res,next) => {
 
 
 
-app.get("/AllSalads", (req, res,next) => {
-
-    Salads.find({}, (err, Users) =>{
-        if (err)
-            return next(err);
-        if (Users) {
-            console.log("Users count : " + Users.length);
-            res.json({users:Users});
-        }
-    });
-});
-
-app.get("/AllSeafood", (req, res,next) => {
-
-    Seafood.find({}, (err, Users) =>{
-        if (err)
-            return next(err);
-        if (Users) {
-            console.log("Users count : " + Users.length);
-            res.json({users:Users});
-        }
-    });
-});
-
-app.get("/AllDesserts", (req, res,next) => {
-
-    Desserts.find({}, (err, Users) =>{
-        if (err)
-            return next(err);
-        if (Users) {
-            console.log("Users count : " + Users.length);
-            res.json({users:Users});
-        }
-    });
-});
 
 
 app.listen(9002, () => {

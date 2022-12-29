@@ -155,7 +155,7 @@ background-color:var(--third-color);
     height: 33vh;
     }
 }
-@media (max-width:767px) {
+@media (max-width:991px) {
     .landing .info h1{
         font-size: 20px;    
      }
