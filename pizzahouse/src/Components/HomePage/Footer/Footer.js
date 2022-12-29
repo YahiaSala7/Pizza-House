@@ -55,7 +55,7 @@ function Footer() {
       
       <div className=" inf three">
       <span> 514 S. Magnolia St. Orlando, FL 32806</span>
-      <span>© 2022. All Rights Reserved. Design by Yahia Salah</span>
+      <span>© 2022. All Rights Reserved. Design by Moataz Essam &&Yahia Salah </span>
       </div>
       </div>
     </footer>

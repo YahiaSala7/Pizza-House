@@ -13,7 +13,7 @@ import mh from './imgs/Our team photo/moys.jpg'
 import Ourteam from './Ourteam';
 import Header from "../HomePage/Header/Header";
 import Footer from "../HomePage/Footer/Footer";
-import Opinion from "./Opinion";
+import ScrollUp from "../ScrollUp/ScrollUp";
 class Aboutus extends Component {
     constructor(){
         
@@ -24,8 +24,9 @@ render() {
     return (
       <div>
         <Header  />
+        <ScrollUp  />
         <div className="containerr">
-        <a href="#" id="ui-to-top" class="ui-to-top mdi mdi-arrow-up active">  <FontAwesomeIcon icon={faArrowUp} className='up'></FontAwesomeIcon></a>
+        {/* <a href="#" id="ui-to-top" class="ui-to-top mdi mdi-arrow-up active">  <FontAwesomeIcon icon={faArrowUp} className='up'></FontAwesomeIcon></a> */}
           <div className="title">
             <h1>About us</h1>
           </div>
@@ -36,7 +37,7 @@ render() {
             <img src="https://livedemo00.template-help.com/wt_51689/images/about-1-835x418.jpg" alt="" width="100%" height='50vh' ></img>
             </div>
             <div className="sidebar">
-              <h5>10+ years of experience</h5>
+              <h2>10+ years of experience</h2>
               <ul className="list">
                 <li >
                   
@@ -80,8 +81,19 @@ render() {
                   <h3>Fresh Ingredients</h3>
                   <p>Albus, dexter particulas grauiter consumere de ferox, bi-color abactus.</p>
                 </div>
-          </div>
-      <div className="teamheadder"> 
+                </div>
+                <div className="ourhistory" >
+<img alt="" src="https://livedemo00.template-help.com/wt_51689/images/our_history-1110x710.jpg"></img>
+<div className="text">
+        <h1>OUR HISTORY</h1>
+        <h3>Partnering with Organic Farms Located in California</h3>
+        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur.</p>
+    </div>
+</div>
+         
+     <div className="team">
+      <div className="teamheadder">
+ 
       <h1>Our Team :</h1>
       </div>
         <div className='teammembers'>
@@ -91,25 +103,17 @@ render() {
         <Ourteam  img={bll} name="Belal Abd Alnasser" rule="Back End"/>
         <Ourteam  img={mh} name="Moahmmed Youssef Ragab" rule="Back End"/>
 </div>
-<div className="ourhistory" >
-<img alt="" src="https://livedemo00.template-help.com/wt_51689/images/our_history-1110x710.jpg"></img>
-<div className="text">
-        <h1>OUR HISTORY</h1>
-        <h3>Partnering with Organic Farms Located in California</h3>
-        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur.</p>
-    </div>
 </div>
-{/* <div className="opinios">
-  <img className="leftimg" src="https://livedemo00.template-help.com/wt_51689/images/our_history-1110x710.jpg"></img>
-  <div className="optext">
-  <h2>What People Say </h2>
-  < Opinion comment='Gluten, fluctus, et galatae. Germanus classiss ducunt ad brodium. Pol, a bene cedrium. Tabess unda in neuter avenio! Orexiss sunt adelphiss de rusticus parma.' name='moataz essam' position='normal customer' img={mz}/>
-</div>
-</div> */}
+
+
+      
        
         </div>
- <Footer />
+        <div className="footer">
+        <Footer />
+        </div>
       </div>
+      
     );
   }
 }

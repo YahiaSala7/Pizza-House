@@ -94,7 +94,7 @@ height: 100%;
 
 }
 .paragraph .para{
-    max-width: 60%;
+    max-width: 50%;
     display: flex;
     flex-wrap: wrap;
     margin: 20px;
@@ -131,7 +131,7 @@ height: 100%;
 }
 .paragraph .para img{
     position: relative;
-    width: 100%;
+    width: 120%;
     height: 55vh;
     margin-top: 50px;
 }
@@ -152,13 +152,17 @@ height: 100%;
 .paragraph .sidebar{
     display: flex;
     position: relative;
-    right: -50px;
+    right: 0;
     top: 88px;
     flex-direction: column;
     margin-bottom: 100px;
     text-align: left;
-    margin-right: 10%;
+    margin-right: 0;
+    width: 50%;
+    margin-left: 240px;
+    
 }
+
 /* .paragraph .sidebar::before{
     content: "";
     position: absolute;
@@ -170,11 +174,13 @@ height: 100%;
     transform: rotateZ(90deg);
 } */
 
-.sidebar h5{
-    right: 0;
-    bottom: 0px;
-    font-size: 25px;
-    margin-right: 50px;
+.sidebar h2{
+    right: 33px;
+    bottom: 17px;
+    font-size: 20px;
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
 
 }
 .sidebar .list{
@@ -296,18 +302,20 @@ height: 100%;
     .paragraph{
             flex-direction: column-reverse;
     }
+
     .paragraph .sidebar{
-        right: 0;
         align-items: center;
+        justify-content: center;
         flex-wrap: wrap;
         text-align: center;
+        margin-left: 90px;
     
     }
     .paragraph .para{
         position: relative;
         display: flex;
         flex-direction: row;
-        right: -1px;
+        right: -42px;
     }
     .sidebar .list{
         flex-direction: row;
@@ -341,28 +349,32 @@ height: 100%;
         height: auto;
     }
     .paragraph .button{
-        margin-right: 0;
+        margin-right: 64px;
+        width: 100%;
     }
     .paragraph .para h1{
-        display: contents;
+        width: 150%;
+        position: relative;
+        font-size: 21px;
+        text-align: center;
     }
     .paragraph .para img {
         position: relative;
-        width: 142%;
+        width: 190%;
         height: 340px;
-        left: -19px;
+        left: -68px;
     }
     
 }
 /* finsh paragraph completely */
 /* start our featurs */
 .ourfeatures{
-    position: relative;
     display: flex;
-    bottom: -400px;
+    bottom: -223px;
     background-color: rgba(119, 119, 119, 0.13);
     width: 100%;
     padding: 5px;
+    flex-wrap: wrap;
     justify-content: space-between;
  
 }
@@ -370,18 +382,18 @@ height: 100%;
     background:none;
     display: flex;
     flex-wrap: wrap;
-    margin-right: 0px;
+    margin-right: 40px;
     margin-left: 80px;
     flex-direction: column;
-    position: relative;
     text-align: center;
+    margin-bottom: 20px ;
 
 }
 .ourfeatures .box h3{
     background:none;
     font-size: 35px;
     font-weight: 400;
-    margin: 20px;
+    margin: 5px;
     text-align: left;
 }
 .ourfeatures .box p{
@@ -394,19 +406,18 @@ height: 100%;
     text-align: left;
 }
 .ourfeatures .icons{
-    position: relative;
- background: none;
+    background: none;
     display: flex;
     text-align: left;
-    height: 70px;
-    width: 70px;
+    height: 81px;
+    width: 86px;
     color: #151515;
     background: yellow;
     border-radius: 50%;
     box-shadow: 12px 12px 20px 0 rgb(0 0 0 / 15%);
-    margin-right: 80px;
+    margin-right: 0;
     top: 30px;
-    left: 0;
+    left: -87px;
 }
 @media(max-width :700px){
     .ourfeatures{
@@ -420,6 +431,10 @@ height: 100%;
 }
 /* finish the ourfearures icons */
 /* start ourteam */
+.teamhedder{
+    position: relative;
+    display: flex;
+}
 .teammembers{
     position: relative;
     display: flex;
@@ -435,14 +450,24 @@ height: 100%;
     /* margin-left: 10%;
     margin-right: 10%; */
 }
-.teamheadder h1{
-    margin: 40px;
+.team{
+    position: relative;
     display: flex;
-    font-size: 90px;
+    flex-direction: column;
+    width: 100%;
+}
+.teamheadder h1{
+    display: flex;
+    font-size: 75px;
     justify-content: center;
     font-weight: 500;
+    bottom: -392px;
     position: relative;
-    bottom: -577px;
+    margin-bottom: -100%;
+    margin-top: 10%;
+}
+.team .teammembers{
+    width: 100%;
 }
 .ourteams{
 position: relative;
@@ -452,19 +477,21 @@ height: 100vh;
 @media(max-width :700px){
    .teammembers{
     top: 419px;
+    margin-top: -346px;
    }
    .ourteams{
     margin-left: 60px;
-   }
+    margin-top: 133px;
+}
+
 }
 .ourhistory{
-    margin-top: 20%;
-    margin-bottom: 300px;
+    margin-top: 10%;
+    margin-bottom:  702px;
     background-color: rgb(69, 69, 69);
     display: flex;
     flex-direction: row-reverse;
     position: relative;
-    bottom: -1024px;
     height: 0;
     margin-left: 0;
     margin-right: 0;
@@ -474,16 +501,14 @@ height: 100vh;
 .ourhistory img{
     width: 50%;
     height: 85vh;
-    position: relative;
     top: 79px;
 }
 .ourhistory .text{
-    background-color:#f5f5f5;
+    background-color:#c4bdbd;
     text-align: center;
     justify-content: center;
     align-items: center;
     width: 100%;
-    position: relative;
     bottom: -79px;
     height: 85vh;
     display: flex;
@@ -495,93 +520,26 @@ height: 100vh;
     width: 80%;
     font-size: 62px;
     background: none;
-    position: relative;
     text-align: left;
     left: 0px;
-    top: 0px;
-}
-/* .ourhistory .text::before{
-    content: "";
-    position: absolute;
-    width: 87%;
-    height: 15px;
-    background-color: rgb(73, 3, 73);
-    bottom: 80px;
-    left: 0%;
-}
-.ourhistory .text .d0{
-    border-radius: 50%;
-    position: absolute;
-    width: 10%;
-    height: 10%;
-    color: rgb(73, 3, 73);
-    background-color: rgb(73, 3, 73);
-    bottom: 50px;
-    left: 10%;
-    z-index: 200;
-}
-.ourhistory .text .d1{
-    border-radius: 50%;
-    position: absolute;
-    width: 10%;
-    height: 10%;
-    color: rgb(73, 3, 73);
-    background-color: rgb(73, 3, 73);
-    bottom: 50px;
-    left: 38%;
-    z-index: 200;
-}
-.ourhistory .text .d2{
-    border-radius: 50%;
-    position: absolute;
-    width: 10%;
-    height: 10%;
-    color: rgb(73, 3, 73);
-    background-color: rgb(73, 3, 73);
-    bottom: 50px;
-    left: 60%;
-    z-index: 200;
-}
-.ourhistory .text .d3{
-    border-radius: 50%;
-    position: absolute;
-    width: 10%;
-    height: 10%;
-    color: rgb(73, 3, 73);
-    background-color: rgb(73, 3, 73);
-    bottom: 50px;
-    left: 85%;
-    z-index: 200;
+    top: -95px;
 }
 
-.ourhistory .text::after{
-    content: "";
-    position: absolute;
-    width: 8%;
-    height: 8%;
-    background-color: white;
-    bottom: 59px;
-    left: 86%;
-    border-radius: 100%;
-    z-index: 250;
-} */
 
 .ourhistory .text h3{
     font-weight: 200;
     font-size: 40px;
     background: none;
-    position: relative;
     text-align: left;
     left: 0px;
     width: 80%;
-    top: -78px;
+    top: -88px;
 }
 .ourhistory .text p{
     color:#777;
     font-weight: 200;
     font-size: 40px;
     background: none;
-    position: relative;
     text-align: left;
     left: 0px;
     width: 80%;
@@ -592,7 +550,6 @@ height: 100vh;
         flex-direction: column;
         flex-wrap: wrap;
         width: 100%;
-        position: relative;
    top: 0;
     }
     .ourhistory .text::before {
@@ -601,44 +558,29 @@ bottom: 9px;
     .ourhistory .text h1{
         width: 100%;
         text-align: center;
-        position: relative;
         font-size: 40px;
-    top: -114px;
+    top: 0;
     left: 0;
+    margin-bottom: 20px;
 }
  
     .ourhistory .text h3{
 
         width: 100%;
-        position: relative;
         font-size: 20px;
         text-align: center;
-    top: -77px;
+    top: -10px;
     left: 0;
+    margin-bottom: 20px;
 }
     .ourhistory .text p{
         width: 100%;
-        position: relative;
         font-size: 20px;
         text-align: center;
     top: -20px;
     left: 0;
 }
-/* .ourhistory .text::after{
-    bottom: 7px;
-}
-.ourhistory .text .d1{
-    bottom: 7px;
-}
-.ourhistory .text .d2{
-    bottom: 7px;
-}
-.ourhistory .text .d3{
-    bottom: 7px;
-}
-.ourhistory .text .d0{
-    bottom: 7px;
-} */
+
 .ourhistory .text{
 flex-direction: column;
 }
@@ -648,9 +590,8 @@ flex-direction: column;
 .ourhistory img {
     width: 100%;
     height: 65vh;
-    position: relative;
     top: 0px;
-    margin-top: 20%;
+    margin-top: 54%;
 
 }
 }
@@ -694,44 +635,8 @@ flex-direction: column;
     bottom: 40px;
 }
 }
-.opinios{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
+.footer{
     position: relative;
-    bottom: -2800px;
+  bottom: -1565px;
 }
-.opinios .leftimg{
-    width: 50%;
-    margin-right: 50px;
-    margin: bottom;
-    /* margin-bottom: -141px; */
-    position: relative;
-    top: -82px;
-    border-radius: 50ox;
-    border-radius: 28px;
-    height: 57vh;
-}
-.opinios .optext{
-    display: flex;
-    width: 50%;
-    text-align: left;
-    justify-content: left;
-    align-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-    margin-left: 90px;
 
-}
-.opinios .optext h2{
-    font-weight: 400;
-    font-size: 85px;
-    position: relative;
-    top: -143px;
-    margin-bottom: -66px;
-}
-.Footer{
-    position: relative;
-    margin-top: 50px;
-    bottom: 5000px;
-}
