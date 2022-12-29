@@ -77,20 +77,21 @@ Pizza House applies its fundamental beliefs to each part of their business to sc
                 <div className="box">
                   <FontAwesomeIcon icon={faHelicopter} className='icons'></FontAwesomeIcon>
                   <h3>Free Delivery</h3>
-                  <p>Lotus advenas ducunt ad gemna. Ubi est domesticus domina heu.</p>
+                  <p>We offered a Free Delivery for our First Order and for Special Customers</p>
                 </div>
                 <div className="box">
                   <FontAwesomeIcon icon={faPizzaSlice} className='icons'></FontAwesomeIcon>
                   <h3>20+ Pizza Options</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh</p>
+                  <p>We have many choices to choose from you will not get bored :)</p>
                 </div>
                 <div className="box">
                   <FontAwesomeIcon icon={faLeaf} className='icons'></FontAwesomeIcon>
                   <h3>Fresh Ingredients</h3>
-                  <p>Albus, dexter particulas grauiter consumere de ferox, bi-color abactus.</p>
+                  <p>all our menu made from freash and natrual ingredients</p>
                 </div>
           </div>
           </div>
+          
           <MainTitle main="Our Team "/>  
         <OurTeamSction/>
  <Footer />
