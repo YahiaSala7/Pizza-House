@@ -3,7 +3,7 @@ import '../general.css'
 import Card from '../pruducts/Card'
 import '../pruducts/card.css'
 import axios from 'axios'
-function Pizza() {
+function Pizza({setLoginUser}) {
   const [menu, setmenu] = useState([]); 
   useEffect(() => {
     axios.get("http://localhost:9002/Allpizza").then(res => {
@@ -15,7 +15,7 @@ function Pizza() {
   const log = menu.map(i => {
     return (
       <>
-        <Card img={i.ImgUrl} name={i.nameOfFood} price={`${i.price}$`} />
+        <Card img={i.ImgUrl} name={i.nameOfFood} price={`${i.price}$` } setLoginUser={setLoginUser} />
       </>
       )
   })

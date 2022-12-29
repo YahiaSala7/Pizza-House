@@ -10,7 +10,7 @@ import Deserts from './Desserts'
 import Burgers from './Burgers'
 import ScrollUp from '../ScrollUp/ScrollUp'
 import LandSection from '../HomePage/LandSection/LandSection'
-function MenuPage() {
+function MenuPage({setLoginUser}) {
   return (
     <div>
       <Header/>
@@ -18,22 +18,22 @@ function MenuPage() {
       <LandSection land="Menu"/>
 
       <MainTitle main="Pizza"/>
-      <Pizza/>
+      <Pizza  setLoginUser={setLoginUser}/>
 
       <MainTitle main="salads"/>
-      <Salads/>
+      <Salads setLoginUser={setLoginUser}/>
 
       <MainTitle main="seafood"/>
-      <SeaFood/>
+      <SeaFood  setLoginUser={setLoginUser}/>
 
       <MainTitle main="burgers"/>
-      <Burgers/>
+      <Burgers  setLoginUser={setLoginUser}/>
 
       <MainTitle main="drinks"/>
-      <Drinks/>
+      <Drinks setLoginUser={setLoginUser}/>
 
       <MainTitle main="desserts"/>
-      <Deserts/>
+      <Deserts  setLoginUser={setLoginUser}/>
 
       <MainTitle/>
       
