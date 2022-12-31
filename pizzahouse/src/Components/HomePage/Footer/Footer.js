@@ -18,19 +18,19 @@ function Footer() {
  <div className="box">
           <h3>What We Offer</h3>
           <ul>
-            <li><a href="#">Pizzas</a></li>
-            <li><a href="#">Burgers</a></li>
-            <li><a href="#">Salads</a></li>
-            <li><a href="#">Drinks</a></li>
-            <li><a href="#">Seafood</a></li>
+            <li><a href="/Menu">Pizzas</a></li>
+            <li><a href="/Menu">Burgers</a></li>
+            <li><a href="/Menu">Salads</a></li>
+            <li><a href="/Menu">Drinks</a></li>
+            <li><a href="/Menu">Seafood</a></li>
           </ul>
         </div>
         <div className="box">
           <h3>Information</h3>
           <ul>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Our Menu</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="/Aboutus">About us</a></li>
+            <li><a href="/Menu">Our Menu</a></li>
+            <li><a href="/Contacts">Contact Us</a></li>
           </ul>
         </div>
  </div>
@@ -55,7 +55,7 @@ function Footer() {
       
       <div className=" inf three">
       <span> 514 S. Magnolia St. Orlando, FL 32806</span>
-      <span>© 2022. All Rights Reserved. Design by Yahia Salah</span>
+      <span>© 2022. All Rights Reserved. Design by Moataz Essam &&Yahia Salah </span>
       </div>
       </div>
     </footer>

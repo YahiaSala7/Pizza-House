@@ -10,7 +10,7 @@ const UsersSchema = new Schema({
     type:Number,
     default:200
   },
-  Orderitem:{}
+  Orderitem:[{nameOfFood:String}]
 });
 
 // Create a model based on that schema

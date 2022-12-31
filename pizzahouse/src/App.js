@@ -1,5 +1,5 @@
 import './App.css';
-import React ,{ useState } from 'react';
+import React ,{ useState ,useEffect} from 'react';
 import HomePage from './Components/HomePage/HomePage';
 import Aboutus from './Components/Aboutus/Aboutus';
 import MenuPage from './Components/MenuPage/MenuPage';
@@ -12,22 +12,30 @@ import Contacts from './Components/Contacts/Contatct'
 
 function App() {
   const [ user, setLoginUser] = useState({})
+  useEffect(()=>{
+
+  })
   return (
-    <div className="App">
     <BrowserRouter>
       <div className="App">
         <Routes>
-          <Route exact path='/' element={<HomePage />} />
-          <Route path='/Aboutus' element={<Aboutus />} />
-          <Route path='/Menu' element={<MenuPage/>}/>
-          <Route path='/Contacts' element={<Contacts/>}/>
-          <Route path='/Login' element={<Login   setLoginUser={setLoginUser}/>} />
-          <Route path='/Register' element={<Register/>}/>
-          <Route path='/AddtoCart' element={<Cart/>}/>
+        <Route path='/' element={<HomePage setLoginUser={setLoginUser}/>} />
+            <Route path='/Aboutus' element={<Aboutus/>} />
+<<<<<<< HEAD
+            <Route path='/Menu' element={ <MenuPage/>}/>
+=======
+            <Route path='/Menu' element={
+              //user && user._id? <MenuPage setLoginUser={setLoginUser}/>  : <Login setLoginUser={setLoginUser} /> 
+              <MenuPage/>
+            }/>
+>>>>>>> 9fe2f429d78f338607ec56eb66160eeead78d736
+            <Route path='/Contacts' element={<Contacts />} />
+            <Route path='/Login' element={  user && user._id? <MenuPage setLoginUser={setLoginUser}/>:<Login setLoginUser={setLoginUser} />} />
+            <Route path='/Register' element={ user && user._id? <MenuPage setLoginUser={setLoginUser}/>:<Register />} />
+            <Route path='/AddtoCart' element={ user && user._id? <Cart />:<Login setLoginUser={setLoginUser} />} />
         </Routes>
       </div>
     </BrowserRouter>
-    </div>
   );
 }
 export default App;

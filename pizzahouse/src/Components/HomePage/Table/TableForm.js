@@ -31,7 +31,7 @@ const [name,setName]=useState({name:"",email:""})
         </select>
     </div>
     <div className='message'>
-        <textarea placeholder='Type Your What You Want,And If it Order Please Type Your Addresse'></textarea>
+        <textarea placeholder='Write Your What You Want,And If it Order Please Type Your Addresse'></textarea>
     </div>
     <div className='submit'>
         <input 

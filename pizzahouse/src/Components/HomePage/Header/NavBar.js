@@ -4,7 +4,8 @@ import '../../general.css'
 import { NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
-function NavBar() {
+function NavBar({setLoginUser}) {
+  const [user,setUser]=useState(setLoginUser);
 const [rotate,setRotate]=useState(false);
 const rotateSideBar =()=>setRotate(!rotate);
   return (
@@ -21,6 +22,7 @@ const rotateSideBar =()=>setRotate(!rotate);
             </li>
             <li> <NavLink to="/Login">Log in</NavLink> </li>
             <li><NavLink to="/Register">Register</NavLink></li>
+            <li><NavLink to="/Login" onClick={()=>setLoginUser({})}>Log out</NavLink></li>
         </ul>
       <div className={rotate ? 'bars first-rotate':'bars second-rotate'} id='bars-button' onClick={rotateSideBar}>
         <span className='line-one' id=''></span>

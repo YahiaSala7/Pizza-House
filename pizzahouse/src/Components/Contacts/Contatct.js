@@ -106,7 +106,7 @@ class Contactus extends Component {
                   <h3>Email</h3>
                   <div className="paragraph">
                     <FontAwesomeIcon icon={faEnvelope} className="sideico" />
-                    <p>teeeeeez@yahoo.com</p>
+                    <p>mz@yahoo.com</p>
                   </div>
                   <div className="box">
                     <h3>Address</h3>

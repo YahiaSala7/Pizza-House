@@ -34,7 +34,7 @@ function Register() {
           route("/login")
         })
     } else {
-      alert("invlid input")
+      alert("password is non match")
     }
 
   }
